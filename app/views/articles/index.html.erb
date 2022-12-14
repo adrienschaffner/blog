@@ -1,7 +1,10 @@
 <h1>Bienvenu sur la liste des articles !</h1>
 
+Nous avons <%= Article.public_count %> articles !
+
 <ul>
   <% @articles.each do |article| %>
+  <% unless article.archived? %>
     <li>
       <%# <a href="/articles/<%= article.id %>
       <%=link_to article.title.capitalize, article %>
