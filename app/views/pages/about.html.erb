@@ -1,0 +1,17 @@
+<h1>Qui suis-je</h1>
+
+<p>Our team :</p>
+<ul>
+  <% @members.each do |member| %>
+   <li><%= member.capitalize %></li>
+  <% end %>
+</ul>
+
+<%# Find someone in a list : filter the list %>
+<form action="/about" method="get">
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
+
+<p><%= link_to "contact", contact_path %></p>
+<p><%= link_to "home page", root_path %></p>
