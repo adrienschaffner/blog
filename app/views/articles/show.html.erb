@@ -1,18 +1,25 @@
-<h1><%= @article.title %></h1>
+<h1>Article :</h1>
+
+<h2><%= @article.title %></h2>
 
 <p><%= @article.body %></p>
 
 <ul>
+  <li><%= link_to "Back", articles_path %></li>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
   <li><%= link_to "Destroy", article_path(@article), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
-                  } %></li>
+    }%>
+  </li>
 </ul>
 
+<%# redirect_to articles_path %>
 <h2>Commentaires</h2>
   <%= render @article.comments %>
 
 <%# Rails is smart enough to spot the forward slash in that string and realize that you want to render the _form.html.erb %>
 <h2>Laisser un commentaire</h2>
-<%= render 'comments.form' %>
+<%# <%= render "form", comment: @article.comment %>
+<%# <%= render ".comments/form", comment: comment %>
+<%= render 'comments/form', comment: @comment %>
