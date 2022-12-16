@@ -2,7 +2,11 @@
 
 <h2><%= @article.title %></h2>
 
+<%# <p><%= @article.rating %>
+
 <p><%= @article.body %></p>
+<p><%= @article.rating %></p>
+<p><%= link_to @article.author, author_article_path %></p>
 
 <ul>
   <li><%= link_to "Back", articles_path %></li>

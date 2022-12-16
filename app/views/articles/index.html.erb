@@ -8,6 +8,8 @@ Nous avons <%= Article.public_count %> articles !
       <li>
         <%# <a href="/articles/<%= article.id %>
         <%=link_to article.title.capitalize, article %>
+        <%= article.rating %>
+        <%= article.author %>
       </li>
     <% end %>
   <% end %>
@@ -15,3 +17,4 @@ Nous avons <%= Article.public_count %> articles !
 
 
 <%= link_to "New Article", new_article_path %>
+<%= link_to "top articles", top_articles_path %>

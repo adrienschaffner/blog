@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "contact", to: "pages#contact"
   resources :articles do
+    collection do
+      get :top
+    end
+    member do
+      get :author
+    end
     # nested resources within articles
     resources :comments
   end
