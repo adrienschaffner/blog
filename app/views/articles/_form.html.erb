@@ -2,6 +2,8 @@
   <%= f.input :title %>
   <%= f.input :body %>
   <%= f.input :rating %>
+  <%# Pour dire qu'on veut uploader le fichierv  %>
+  <%= f.input :photo, as: :file %>
   <%= f.input :status %>
   <%= f.submit %>
 <% end %>
