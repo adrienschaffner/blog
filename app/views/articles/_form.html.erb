@@ -1,9 +1,10 @@
 <%= simple_form_for(article) do |f| %>
   <%= f.input :title %>
+  <%= f.input :author %>
   <%= f.input :body %>
   <%= f.input :rating %>
-  <%# Pour dire qu'on veut uploader le fichierv  %>
-  <%= f.input :photo, as: :file %>
+  <%# Pour dire qu'on veut uploader le fichier  %>
+  <%= f.input :picture, as: :file %>
   <%= f.input :status %>
   <%= f.submit %>
 <% end %>

@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
-  before_action :set_article, only:[:top, :show, :edit, :update, :destroy, :top, :author]
+  before_action :set_article, only:[:top, :show, :edit, :update, :destroy, :top, :author, :destroy_picture]
 
   def top
     @articles = Article.where(rating: (5..10))
@@ -49,6 +49,12 @@ class ArticlesController < ApplicationController
     redirect_to articles_path, status: :see_other
   end
 
+  def destroy_picture
+    @picture = ActiveStorage::Attachment.find(params[:id])
+    @picture.purge
+    redirect_to article_path, status: :see_other
+  end
+
   private
 
   def set_article
@@ -56,6 +62,6 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :body, :status, :rating, :author)
+    params.require(:article).permit(:title, :body, :status, :rating, :author, :picture)
   end
 end

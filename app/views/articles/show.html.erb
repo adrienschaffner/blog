@@ -1,12 +1,14 @@
 <h1>Article :</h1>
 
 <h2><%= @article.title %></h2>
-
+<p><%= link_to @article.author, author_article_path %></p>
+<% if @article.picture.attached?  %>
+  <%= cl_image_tag @article.picture.key, alt: "article picture", height: 300, crop: :fill %> <br>
+  <%= link_to "modify picture", edit_article_path(@article) %>
+<% end %>
 <%# <p><%= @article.rating %>
-
 <p><%= @article.body %></p>
 <p><%= @article.rating %></p>
-<p><%= link_to @article.author, author_article_path %></p>
 
 <ul>
   <li><%= link_to "Back", articles_path %></li>
