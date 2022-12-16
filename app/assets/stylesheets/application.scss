@@ -1,1 +1,11 @@
-// @import "bootstrap/scss/bootstrap";
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome";
+@import "components/navbar";
+@import "components/logo";
+@import "pages/home";
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

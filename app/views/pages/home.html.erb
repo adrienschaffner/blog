@@ -1,8 +1,18 @@
-<h1>Slogan quelconque</h1>
+<div class="lignes">
+  <div class="l1"></div>
+  <div class="l2"></div>
+  <div class="l3"></div>
+</div>
+
+<div>
+  <h1><span>Do</span> <span>You</span> <span>Want</span> <span>A</span> <span>PM</span></h1>
+</div>
+
+<%# <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
 
 <ul>
   <li><%= link_to "articles", articles_path %></li>
-  <li><%= link_to "qui suis-je", about_path %></li>
-  <li><%= link_to "me contacter", contact_path %></li>
+  <li><%= link_to "qui suis-je", about_path, class: "logo-medias" %></li>
+  <li><%= link_to "me contacter", contact_path, class: "logo-medias" %></li>
 </ul>
-<p>Now is <%= Time.now %></p>
+<%# <p>Now is <%= Time.now %>
