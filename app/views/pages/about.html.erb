@@ -1,17 +1,29 @@
 <h1>Qui suis-je</h1>
 
-<p>Our team :</p>
-<ul>
-  <% @members.each do |member| %>
-   <li><%= member.capitalize %></li>
-  <% end %>
-</ul>
+<h3>Adrien Schaffner</h3>
 
-<%# Find someone in a list : filter the list %>
-<form action="/about" method="get">
-  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
-  <input type="submit">
-</form>
+<%= cl_image_tag "cjqsvdvhp3dhbs456krj", alt: "moi qui profite", height:300, crop: :fill %>
 
+<h2>Mon parcours</h2>
+
+<h2>Mes projets</h2>
+
+<h2>Mes articles</h2>
+
+<h2>Mes skills</h2>
+
+<h2>Mes passions</h2>
 <p><%= link_to "contact", contact_path %></p>
 <p><%= link_to "home page", root_path %></p>
+
+<%# Find someone in a list : filter the list %>
+<%# <form action="/about" method="get">
+  <input type="text" name="member" value="<%= params[:member] " placeholder="Who are you looking for?"> %>
+  <%# <input type="submit"> %>
+<%# </form> %>
+<%# <p>Our team :</p>
+<ul>
+  <% @members.each do |member| %>
+   <%# <li><%= member.capitalize %>
+  <%# <% end %>
+<%# </ul> %>
