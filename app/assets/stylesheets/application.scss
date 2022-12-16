@@ -1,8 +1,10 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
 @import "components/navbar";
+@import "components/footer";
 @import "components/logo";
 @import "pages/home";
+
 
 *, ::before, ::after {
   box-sizing: border-box;

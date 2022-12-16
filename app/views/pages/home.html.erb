@@ -1,18 +1,38 @@
-<div class="lignes">
-  <div class="l1">-</div>
-  <div class="l2">-</div>
-  <div class="l3">-</div>
-</div>
 
-<div>
-  <h1><span>Do</span> <span>You</span> <span>Want</span> <span>A</span> <span>PM</span></h1>
-</div>
 
-<%# <%= image_tag "logo.png", alt: "Le Wagon", width: 200 %>
 
-<ul>
-  <li><%= link_to "articles", articles_path %></li>
-  <li><%= link_to "qui suis-je", about_path%></li>
-  <li><%= link_to "me contacter", contact_path%></li>
-</ul>
 <%# <p>Now is <%= Time.now %>
+</div>
+
+<main>
+  <section class="landing">
+    <nav>
+      <h1 id="logo" class="fa-regular fa-leaf-maple" >Afloat</h1>
+      <ul class="nav-links">
+        <li> <%= link_to "accueil", root_path %></li>
+        <li><%= link_to "articles", articles_path %></li>
+        <li><%= link_to "qui suis-je", about_path%></li>
+        <li>Mes projets</li>
+        <li><%= link_to "me contacter", contact_path%></li>
+      </ul>
+    </nav>
+    <h2 class="big-text">Be a Product Manager</h2>
+    <div>
+      <h1><span>Do</span> <span>You</span> <span>Want</span> <span>A</span> <span>PM</span> <span>?</span></h1>
+    </div>
+  </section>
+</main>
+<div class="intro">
+  <div class="intro-text">
+    <h1 class="hide">
+      <span class="text">Discovery</span>
+    </h1>
+    <h1 class="hide">
+      <span class="text">Delivery</span>
+    </h1>
+    <h1 class="hide">
+      <span class="text">Repeat.</span>
+    </h1>
+  </div>
+</div>
+<div class="slider"></div>
