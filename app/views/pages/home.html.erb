@@ -2,37 +2,41 @@
 
 
 <%# <p>Now is <%= Time.now %>
-</div>
+<div data-controller="hello">
+  <main>
+    <section class="landing">
+      <h2 class="big-text">A bit of Product Management and other stuffs</h2>
+      <div>
+        <h1 class=""><span>Welcome</span> <span>to</span> <span>my</span> <span>modest</span> <span>page</span> <span>about</span> <span>Product</span> <span>and</span> <span>other</span> <span>stuffs</span></h1>
+      </div>
 
-<main>
-  <section class="landing">
-    <nav>
-      <h1 id="logo" class="fa-regular fa-leaf-maple" >Afloat</h1>
-      <ul class="nav-links">
-        <li> <%= link_to "accueil", root_path %></li>
-        <li><%= link_to "articles", articles_path %></li>
-        <li><%= link_to "qui suis-je", about_path%></li>
-        <li>Mes projets</li>
-        <li><%= link_to "me contacter", contact_path%></li>
-      </ul>
-    </nav>
-    <h2 class="big-text">Be a Product Manager</h2>
-    <div>
-      <h1><span>Do</span> <span>You</span> <span>Want</span> <span>A</span> <span>PM</span> <span>?</span></h1>
+      <div>
+        <ul class="">
+          <li class="btn btn-outline-primary btn-lg"><%= link_to "articles", articles_path %></li>
+          <li class="btn btn-outline-primary btn-lg"><%= link_to "qui suis-je", about_path %></li>
+          <li class="btn btn-outline-success btn-lg"><%= link_to "hire me!", contact_path %></li>
+        </ul>
+      </div>
+      <div class="footer">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <p>copyright myself <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text" data-action="load->hello#connect" data-hello-target="text">Discovery</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text" data-action="load->hello#connect" data-hello-target="text">Delivery</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text" data-action="load->hello#connect" data-hello-target="text">Repeat</span>
+      </h1>
     </div>
-  </section>
-</main>
-<div class="intro">
-  <div class="intro-text">
-    <h1 class="hide">
-      <span class="text">Discovery</span>
-    </h1>
-    <h1 class="hide">
-      <span class="text">Delivery</span>
-    </h1>
-    <h1 class="hide">
-      <span class="text">Repeat.</span>
-    </h1>
   </div>
+  <div class="slider"></div>
 </div>
-<div class="slider"></div>
