@@ -9,6 +9,9 @@
 <%# <p><%= @article.rating %>
 <p><%= @article.body %></p>
 <p><%= @article.rating %></p>
+<% @article.rating.to_i.times do  %>
+ <span class="glyphicon glyphicon-star"></span>
+<% end %>
 
 <ul>
   <li><%= link_to "Back", articles_path %></li>
