@@ -8,18 +8,69 @@ main {
   background: url("./working_place.jpg");
   background-size: cover;
   padding: 0rem 5rem;
-
 }
 
-// .big-text {
-  // position: absolute;
-  // top: 30%;
-  // left: 50%;
-  // transform: translate(-50%, -30%);
-  // font-size: 5rem;
-  // color: rgb(61, 61, 61);
-// }
 
+.big-text {
+  position: absolute;
+  top: 35%;
+  right: 0%;
+  width: 450px;
+  transform: translate(-50%, -30%);
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0px 1px;
+}
+
+.btn-list {
+  position: absolute;
+  bottom: 20%;
+  // left: 55%;
+  right: 0;
+  // width: 450px;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-right: 200px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.btn-list a {
+  color: white;
+}
+
+@media screen and (max-width:900px){
+  .big-text {
+    font-size: 3em;
+    top: 35%;
+    right: 5%;
+    width: 200px;
+  }
+
+  .big-text.mobile-menu {
+    margin-left: 0;
+  }
+
+  .btn-list {
+    display: flex;
+    justify-content: space-between;
+    bottom: 7%;
+    right: 0;
+    width: none;
+
+    margin-right: 40px;
+    margin-left: 40px;
+    // box-sizing: border-box;
+    // align-items: center;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .btn-list {
+    margin: 10px;
+  }
+}
 // .intro {
 //   background: black;
 //   position: fixed;
