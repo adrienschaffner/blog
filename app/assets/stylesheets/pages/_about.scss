@@ -1,0 +1,80 @@
+.body {
+  min-height: 100vh;
+  width: 100vw;
+  // background: url("./working_place2.jpg");
+  background-color: #edb6038d;
+  background-size: cover;
+  padding: 0rem 5rem;
+}
+
+.container-journey {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 200px;
+  // position: absolute;
+  // top: 20%;
+
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.journey {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.journey-core{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  padding: 100px;
+}
+
+.journey-title {
+  padding: 12px;
+}
+
+.journey-text {
+  line-height: 1.6;
+}
+
+.avatar-center {
+  margin: 0 50px 75px;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-core {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+.skills, .formation {
+  flex-grow: 1;
+}
+
+.experiences {
+  flex-grow: 2;
+}
+
+.list-style-circle {
+  list-style-type: circle;
+}
