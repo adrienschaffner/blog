@@ -1,80 +1,187 @@
 .body {
   min-height: 100vh;
-  width: 100vw;
-  // background: url("./working_place2.jpg");
-  background-color: #edb6038d;
-  background-size: cover;
-  padding: 0rem 5rem;
+
+//   // background: url("./working_place2.jpg");
+  background-color: black;
+  color: #EDB703;
+//   // background-color: #edb6038d;
+//   background-size: cover;
+//   padding: 0rem 5rem;
 }
 
+.about-title {
+  color: white;
+  margin: 5%;
+  border-bottom: 1px solid white;
+  width: 50%;
+}
+
+.margin-10{
+  margin-top: 300px;
+}
+
+.margin-20{
+  margin: 20%;
+}
+
+.border-left {
+  border-left: 2px solid white;
+}
+
+.intro-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-welcome {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  width: 50%;
+  gap: 2rem;
+}
+
+.paragraph {
+  width: 75%;
+}
+
+.border-white {
+  width: 40px;
+  border-top: 1px solid white;
+}
+
+.border-bottom {
+  border-bottom: 1px solid white;
+}
+
+
+.container-center {
+  display: flex;
+  justify-content: center;
+}
 .container-journey {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 200px;
-  // position: absolute;
-  // top: 20%;
-
 }
 
-.container-title {
+.container-experience {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container-scroll {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  width: 40%;
+  height: 500px;
+  padding: 2%;
+  border-left: 2px solid white;
+  overflow-x:hidden;
+  overflow-y:auto;
 }
 
-.journey {
+.about-experience {
+  width: 40%;
+}
+
+.container-skills {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 
-.journey-core{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 70%;
-  padding: 100px;
-}
+// background: #F5A7B3;
+// border-radius: 20px 0px 0px 20px;
+// width: 150px;
+// * {
+//   color: #EDB703;
+// }
 
-.journey-title {
-  padding: 12px;
-}
+// .container-journey {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding-top: 200px;
+//   // position: absolute;
+//   // top: 20%;
 
-.journey-text {
-  line-height: 1.6;
-}
+// }
 
-.avatar-center {
-  margin: 0 50px 75px;
-}
+// .container-title {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
-.resume {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+// .journey {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 
-.resume-core {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: stretch;
-}
+// .name {
+//   margin: 42px 32px;
+// }
 
-.skills, .formation {
-  flex-grow: 1;
-}
 
-.experiences {
-  flex-grow: 2;
-}
+// .journey-core{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 70%;
+//   padding: 5%;
+// }
 
-.list-style-circle {
-  list-style-type: circle;
-}
+// .about-title {
+//   padding: 12px;
+// }
+
+// .journey-text {
+//   line-height: 1.6;
+// }
+
+// .avatar-center {
+//   margin: 0 50px 75px;
+// }
+
+// .resume {
+//   display: grid;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // gap: 1em ;
+  // justify-content: space-evenly;
+  // align-items: flex-start;
+// }
+
+// .resume > * {
+//   flex: 1;
+// }
+// .resume-core {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   align-content: stretch;
+// }
+
+// .skills, .formation {
+//   flex-grow: 1;
+// }
+
+// .experiences {
+//   flex-grow: 2;
+// }
+
+// .experience-title{
+//   margin: 1rem;
+//   color: white;
+// }
+
+// .list-style-circle {
+//   list-style-type: circle;
+// }
