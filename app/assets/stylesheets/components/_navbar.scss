@@ -1,4 +1,4 @@
-* a{
+* a {
    text-decoration: none;
 }
 
@@ -19,6 +19,7 @@
 
 .navbar .nav-links ul {
   display: flex;
+  list-style-type: none;
 }
 
 .navbar .nav-links ul li {

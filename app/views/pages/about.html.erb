@@ -1,10 +1,10 @@
 <div class="body">
 
 
-    <div class="intro-container">
-      <%= cl_image_tag "cjqsvdvhp3dhbs456krj", alt: "moi qui profite", height:300, crop: :fill, class:"avatar margin-10" %>
+    <div class="intro-container" id="intro">
+      <%= cl_image_tag "cjqsvdvhp3dhbs456krj", alt: "moi qui profite", height:300, crop: :fill, class:"avatar margin-300" %>
 
-      <div class="container-welcome margin-10">
+      <div class="container-welcome margin-300">
         <h1 class="display-3">Welcome I'm <br>
         <span class="about-title">Adrien Schaffner</span></h1>
 
@@ -15,13 +15,16 @@
       <p class="border-white"></p>
       </div>
   </div>
+  <div class="arrow-direction">
+    <%= link_to "", about_path(anchor:"journey"), class: "fa-solid fa-arrow-down-long"%>
+  </div>
 
 
-  <div class="container-center margin-10">
+  <div class="container-center margin-300">
     <div class="container-journey paragraph">
-      <h2 class="about-title" . id="journey">My historical journey</h2>
+      <h2 class="about-title">My historical journey</h2>
       <%# <%= cl_image_tag "journey_tahqey.jpg", alt: "i'm going for an adventure!", height: 300, crop: :fill, class:"img-size" %>
-      <div class="paragraph">
+      <div class="paragraph paragraph-journey" id="journey">
         <p>Long ago...</p>
         <p>I studied work law and human resources for several years. <br>
         Thanks to that I worked as a specialist recruiter for more than four years, until I discovered the Product Management existence. <br>
@@ -42,36 +45,45 @@
         In the same time, I tried on my own to build a markeplace in fashion with a specific vision : Casual. </p>
 
         <p>
-        And that's it ! After struggling a little and learned a lot, here I am ! <i class="fa-solid fa-rocket orange"></i>
+        And that's it ! After struggling a little and learned a lot, here I am ! <i class="fa-solid fa-rocket blue"></i>
         </p>
         <br>
         <p class="border-white"></p>
       </div>
     </div>
   </div>
+  <div class="arrow-direction">
+    <%= link_to "", about_path(anchor:"experience"), class: "fa-solid fa-arrow-down-long"%>
+    <%= link_to "", about_path(anchor:"intro"), class: "fa-solid fa-arrow-up-long"%>
+    <%# <i class="fa-solid fa-arrow-down-long"></i>
+    <i class="fa-solid fa-arrow-up-long"></i> %>
+  </div>
 
 
 
-  <div class="container-experience margin-10">
+  <div class="container-experience margin-300" id="experience">
     <div class="about-experience">
-      <h2 class="about-title">Experience</h2>
+      <h2 class="about-title"><i class="fa-solid fa-briefcase"></i>&nbsp Experience</h2>
       <p>During my past career in Human Resources I switched from a great but quit old-fashioned company to another,
       more of a start up, and that's when I entered a new way
       to work, faster, modern and dealing with new technology. <br>
       Surrounded by recruiters, I was more focused on the client side, trying to find a way to help them in their specific needs and issues with the help of an AI.
       I reported weekly about the market evolution and was able to propose new directions to follow. </p>
       <p>I also added what I think has the most value as a Product Manager : My side projects as a Product Manager.</p>
+      <ul>
+        <li class="btn btn-success btn-lg margin-20"><%= link_to "hire me!", contact_path %></li>
+      </ul>
       <p class="border-white"></p>
     </div>
 
     <div class="container-scroll">
       <div class="border-bottom">
         <p>June 2022 - now</p>
-        <h4>CASUAL</h4>
+        <h4 class="blue">CASUAL</h4>
         <p>Bordeaux</p>
-        <p>Product Manager & Founder</p>
+        <p class="italic">Product Manager & Founder</p>
         <ul>
-          <li><em>Discovery</em></li>
+          <li><em class="underline">Discovery</em></li>
           <li>Determine the vision to achieve and the strategy to succeed</li>
           <li>Conduct market research and sharpen ideation</li>
           <li>Conduct User research, identify users'needs and establish Persona</li>
@@ -80,7 +92,7 @@
           <li>Design sketches on Figma to get a corporate identity</li>
           <li>Determine sales method (List all brands to call, mail sending, finding partners,...)</li>
         <br>
-          <li><em>Delivery</em></li>
+          <li><em class="underline">Delivery</em></li>
           <li>Define the product roadmap on Trello</li>
           <li>Product Development on RubyonRails (backend & frontend)</li>
           <li>Deal with external help and advices</li>
@@ -89,11 +101,11 @@
 
       <div class="border-bottom">
         <p>June 2022 - december 2022 - self </p>
-        <h4>CRUSHS</h4>
+        <h4 class="blue">CRUSHS</h4>
         <p>Bordeaux</p>
-        <p>Product Manager & Co-founder</p>
+        <p class="italic">Product Manager & Co-founder</p>
         <ul>
-          <li><em>Discovery</em></li>
+          <li><em class="underline">Discovery</em></li>
           <li>Determine the vision to achieve and the strategy to succeed</li>
           <li>Conduct market research and sharpen ideation</li>
           <li>Conduct User research, identify users'needs and establish Persona (from a sample of 20 people)</li>
@@ -101,7 +113,7 @@
           <li>Build a MVP, from design sketches to a functionnal end-to-end test on Figma</li>
           <li>Conduct user tests validation (one-to-one meeting or web link and survey for people too far from us)</li>
         <br>
-          <li><em>Delivery</em></li>
+          <li><em class="underline">Delivery</em></li>
           <li>Define the product roadmap on Trello and set a time limit</li>
           <li>Regular meetings with the development team to under the struggling points (daily and weekly)</li>
           <li>Product Development on RubyonRails (backend & frontend)</li>
@@ -112,9 +124,9 @@
 
       <div class="border-bottom">
         <p>Septembre 2019 - June 2021 - cdi </p>
-        <h4>QAPA</h4>
+        <h4 class="blue">QAPA</h4>
         <p>Bordeaux</p>
-        <p>Account Developer</p>
+        <p class="italic">Account Developer</p>
         <ul>
           <li>Business development of the client base</li>
           <li>Growth of the customer portfolio split between larger accounts (Carrefour, Danone, ...) and smaller accounts : up to 57 accounts</li>
@@ -131,9 +143,9 @@
 
       <div class="border-bottom">
         <p>March 2017 - May 2019 - pro contract-cdi </p>
-        <h4>KELLY SERVICES</h4>
+        <h4 class="blue">KELLY SERVICES</h4>
         <p>Bordeaux</p>
-        <p>Recruiter</p>
+        <p class="italic">Recruiter</p>
         <ul>
           <li>Candidates recruitement</li>
           <li>Writing and serving job advertisements</li>
@@ -150,27 +162,34 @@
       </div>
     </div>
   </div>
+  <div class="arrow-direction">
+    <%= link_to "", about_path(anchor:"formation"), class: "fa-solid fa-arrow-down-long"%>
+    <%= link_to "", about_path(anchor:"journey"), class: "fa-solid fa-arrow-up-long"%>
+  </div>
 
-  <div class="container-experience margin-10">
+  <div class="container-experience margin-300" id="formation">
     <div class="about-experience">
-      <h2 class="about-title">Education</h2>
+      <h2  class="about-title"><i class="fa-solid fa-graduation-cap white"></i> &nbsp Education </h2>
 
       <p>I studied five years to obtain a master in work law, then I completed it with one more year at the Inseec Business School
       in Human Resources Management. Recently I went to Le Wagon bootcamp to learn about Web Development and improve my technical skills.
       </p>
+      <ul>
+        <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
+      </ul>
       <p class="border-white"></p>
     </div>
     <div class="container-scroll">
-      <p>June 2022 - Le Wagon</p>
+      <p>June 2022 - <span class="blue">Le Wagon</span></p>
       <p>Web Development</p>
       <ul>
-      <li>Web and DB fundamentals</li>
-      <li>Backend with Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"></li>
-      <li>Frontend with HTML <i class="fa-brands fa-html5 orange"></i>, CSS <i class="fa-brands fa-css3-alt blue"></i> & Javascript <i class="fa-brands fa-js jaune"></i></li>
-      <li>Fullstack with Ruby on Rails framework <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16"></li>
+        <li>Web and DB fundamentals</li>
+        <li>Backend with Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"></li>
+        <li>Frontend with HTML <i class="fa-brands fa-html5 orange"></i>, CSS <i class="fa-brands fa-css3-alt blue"></i> & Javascript <i class="fa-brands fa-js jaune"></i></li>
+        <li>Fullstack with Ruby on Rails framework <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16"></li>
       </ul>
 
-      <p>June 2017 - INSEEC</p>
+      <p>June 2017 - <span class="blue">INSEEC</span></p>
       <p>Master Human Resource Management</p>
       <ul>
         <li>Contract, lay-off, mutation, ...</li>
@@ -182,76 +201,101 @@
       </ul>
 
 
-      <p>June 2016 - preparation for the legal exam to become a lawyer</p>
+      <p>June 2016 - <span class="blue">IEJ</span></p>
+      <p>Preparation for the legal exam to become a lawyer</p>
 
 
-      <p>June 2015 - Bordeaux University</p>
+      <p>June 2015 - <span class="blue">Bordeaux University</span></p>
       <p>Master Work Law</p>
     </div>
   </div>
+  <div class="arrow-direction">
+    <%= link_to "", about_path(anchor:"skills"), class: "fa-solid fa-arrow-down-long"%>
+    <%= link_to "", about_path(anchor:"experience"), class: "fa-solid fa-arrow-up-long"%>
+  </div>
 
-  <h2 class="about-title margin-10">Skills</h2>
+  <h2 class="about-title margin-300"><i class="fa-solid fa-gift"></i>&nbsp Skills</h2>
   <div class="container-skills">
     <div>
+      <p><em class="italic">Personnal skills</em></p>
       <ul>
-        <li><em>Personnal skills</em></li>
         <li>creative and problem-solving focused</li>
         <li>Good communicator and listener</li>
         <li>Flexible</li>
         <li>Organized</li>
       </ul>
+      <p><em class="italic" id="skills">Professional skills</em></p>
       <ul>
-        <li><em>Professional skills</em></li>
         <li>Conducting Market Research and users tests</li>
         <li>Defining the vision and the strategy</li>
         <li>Establishing User stories and the product roadmap</li>
         <li>Software Development and desing skills</li>
       </ul>
+      <ul>
+        <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
+      </ul>
       <p class="border-white"></p>
     </div>
     <div class="border-left">
+      <p><em class="italic">Tools & Development environment</em></p>
       <ul>
-        <li><em>Tools & Development environment</em></li>
-        <li>HTML <i class="fa-brands fa-html5 orange"></i> & CSS <i class="fa-brands fa-css3-alt blue"></i> <span class="border-white"></span></li>
-        <li>Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"> & RubyOnRails <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16"> <span>-</span></li>
-        <li>Javascript <i class="fa-brands fa-js jaune"></i> <span>-</span></li>
-        <li>Figma <span>-</span></li>
-        <li>Trello <span>-</span></li>
-        <li>Notion <span>-</span></li>
-        <li>Github <span>-</span></li>
+        <li>HTML <i class="fa-brands fa-html5 orange"></i> & CSS <i class="fa-brands fa-css3-alt blue"></i> &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i> <i class="fa-solid fa-plus blue"></i> <i class="fa-solid fa-plus blue"></i></li>
+        <li>Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"> & RubyOnRails <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16">&nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
+        <li>Javascript <i class="fa-brands fa-js jaune"></i> &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i></li>
+        <li>Figma &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i><i class="fa-solid fa-plus blue"></i></li>
+        <li>Trello &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i><i class="fa-solid fa-plus blue"></i></li>
+        <li>Notion &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
+        <li>Github &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
       </ul>
     </div>
   </div>
+  <div class="arrow-direction">
+    <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-down-long"%>
+    <%= link_to "", about_path(anchor:"formation"), class: "fa-solid fa-arrow-up-long"%>
+  </div>
 
-  <h2 class="about-title margin-10">Articles</h2>
-  <div class="width-50">
+
+  <h2 class="about-title margin-300"><i class="fa-solid fa-pen-nib white"></i>&nbsp Articles</h2>
+  <div class="container-article">
     <p>As a newcomer in the Product Management, I studied a lot about it. I read books, articles, listen to podcasts...
     As I was working I told myself that it might be interesting to share what I was learning and what I wrote with
     people like me that might also be curious about PM. <br>
     When you know nothing, you may struggle a little to find where to begin, what is important and what is not,
-    to know the differences betwteen Lean, MVP, Scrum among other useful notions.
+    to know the differences between Lean, MVP, Scrum among other useful notions. <br>
     That is when the idea come to me to make my own blog about it.
     Considering I am not an expert (for the moment), those articles are a way to share what I know and in the same
     time to be sure that I understand clearly each topic.</p>
     <p>
-    So, if you want to read some, it's right there :
-    <%= link_to "articles", articles_path, class:"btn btn-primary btn-lg" %>
+      So, if you want to read some, it's <span class="underline" id="articles">right there</span> &nbsp<i class="fa-solid fa-hand-point-right red"></i> &nbsp: &nbsp
+      <%= link_to "articles", articles_path, class:"btn btn-primary btn-lg" %>
     </p>
+    <p class="border-white"></p>
+  </div>
+  <div class="arrow-direction">
+    <%= link_to "", about_path(anchor:"hobbies"), class: "fa-solid fa-arrow-down-long"%>
+    <%= link_to "", about_path(anchor:"skills"), class: "fa-solid fa-arrow-up-long"%>
   </div>
 
-<h2 class="about-title margin-10">my hobbies</h2>
-<p>I have a lot of hobbies that prevent me to be bored : <br>
-Cinema &#127871 &#127916 &#127903 (Adam Sandler deserve more recognition. Change my mind.) <br>
-I practice guitar as often as I can &#127928 &#127926 (if you want to jam one day, with great pleasure !) <br>
-I enjoy spending time in museums &#128444 (I'de like one Vermeer in my room, I had it into my wishlist Amazon) <br>
-I train three times a week &#127947 <br>
-& Christmas is my favorite time of the year &#127876 &#127873</p>
+  <h2 class="about-title margin-300"><i class="fa-solid fa-gamepad"></i>&nbsp my hobbies</h2>
+  <div class="container-article" id="hobbies">
+    <p>I have a lot of hobbies that prevent me to be bored : <br>
+    Cinema &#127871 &#127916 &#127903 (Adam Sandler deserve more recognition. Change my mind.) <br>
+    I practice guitar as often as I can &#127928 &#127926 (if you want to jam one day, with great pleasure !) <br>
+    I enjoy spending time in museums &#128444 (I'de like one Vermeer in my room, I had it into my wishlist Amazon) <br>
+    I train three times a week &#127947 <br>
+    & Christmas is my favorite time of the year &#127876 &#127873</p>
+  </div>
+  <div class="arrow-direction pad-5">
+    <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-up-long"%>
+  </div>
 
-<ul>
-<li class="btn btn-primary btn-lg"><%= link_to "articles", articles_path %></li>
-<li class="btn btn-primary btn-lg"><%= link_to "home page", root_path %></li>
-<li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
-</ul>
+  <%# <div class="btn-list-">
+    <ul>
+    <li class="btn btn-primary btn-lg"><%= link_to "articles", articles_path %>
+    <%# <li class="btn btn-primary btn-lg"><%= link_to "home page", root_path %>
+    <%# <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %>
+    <%# </ul> %>
+  <%# </div> %>
 
 </div>
 <%# Find someone in a list : filter the list %>
@@ -265,4 +309,4 @@ I train three times a week &#127947 <br>
    <%# <li><%= member.capitalize %>
   <%# <% end %>
 <%# </ul> %>
-</div>
+<%# </div> %>
