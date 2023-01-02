@@ -1,30 +1,30 @@
 <div class="body">
 
 
-    <div class="intro-container" id="intro">
-      <%= cl_image_tag "cjqsvdvhp3dhbs456krj", alt: "moi qui profite", height:300, crop: :fill, class:"avatar margin-300" %>
+  <div class="intro-container" id="intro">
+    <%= cl_image_tag "cjqsvdvhp3dhbs456krj", alt: "moi qui profite", height:300, crop: :fill, class:"avatar margin-20" %>
 
-      <div class="container-welcome margin-300">
-        <h1 class="display-3">Welcome I'm <br>
-        <span class="about-title">Adrien Schaffner</span></h1>
+    <div class="container-welcome margin-20">
+      <h1 class="display-3">Welcome I'm <br>
+      <span class="white-title">Adrien Schaffner</span></h1>
 
 
-        <p class="paragraph">Hi ! I'm a new Product Manager looking for a new opportunity after graduating from Le Wagon and working on two side projects.
+      <p class="paragraph">Hi ! I'm a new Product Manager looking for a new opportunity after graduating from Le Wagon and working on two side projects.
       I love the connection between the vision and the user and to work on the best way to provide better products.</p>
       <%# mettre un link to vers les différentes parties de la page pour gagner du temps %>
       <p class="border-white"></p>
-      </div>
+    </div>
   </div>
   <div class="arrow-direction">
     <%= link_to "", about_path(anchor:"journey"), class: "fa-solid fa-arrow-down-long"%>
   </div>
 
 
-  <div class="container-center margin-300">
-    <div class="container-journey paragraph">
-      <h2 class="about-title">My historical journey</h2>
+  <div class="margin-20">
+    <div class="container-journey">
+      <h2 class="white title">My historical journey</h2>
       <%# <%= cl_image_tag "journey_tahqey.jpg", alt: "i'm going for an adventure!", height: 300, crop: :fill, class:"img-size" %>
-      <div class="paragraph paragraph-journey" id="journey">
+      <div class="paragraph-75" id="journey">
         <p>Long ago...</p>
         <p>I studied work law and human resources for several years. <br>
         Thanks to that I worked as a specialist recruiter for more than four years, until I discovered the Product Management existence. <br>
@@ -37,9 +37,8 @@
         Surrounded by recruiters, I was more focused on the client side, trying to find a way to help them in their specific needs and issues with the help of an AI.
         I reported weekly about the market evolution and was able to propose new directions to follow. <br> %>
         During my last experience in Human Resources I discovered what is a Product Manager, what does he do, and understood that is what I wanted to do from now ! </p>
-        <p>As a Product Manager, one of the main key is the technical background.
-        So I quit, went to Le Wagon's bootcamp and learned to code from scratch with html, CSS & Ruby, to use
-        RubyonRails Framework and to drive an end-to-end project. <br>
+        <p> So I quit, went to Le Wagon's bootcamp and learned to code from scratch with html, CSS & Ruby, to use
+        RubyonRails Framework and to drive an end-to-end project, useful tool as a Product Manager, since one of the main key is the technical background. <br>
         At the end, with some other alumni, we decided to improve our skills and to practice what we learned with our own project.
         Crushs was born ! We set a time limit of 6 months and my part was essentially focused on the PM duties (but not only).
         In the same time, I tried on my own to build a markeplace in fashion with a specific vision : Casual. </p>
@@ -61,9 +60,9 @@
 
 
 
-  <div class="container-experience margin-300" id="experience">
+  <div class="container-experience margin-20" id="experience">
     <div class="about-experience">
-      <h2 class="about-title"><i class="fa-solid fa-briefcase"></i>&nbsp Experience</h2>
+      <h2 class="white"><i class="fa-solid fa-briefcase"></i>&nbsp Experience</h2>
       <p>During my past career in Human Resources I switched from a great but quit old-fashioned company to another,
       more of a start up, and that's when I entered a new way
       to work, faster, modern and dealing with new technology. <br>
@@ -71,7 +70,7 @@
       I reported weekly about the market evolution and was able to propose new directions to follow. </p>
       <p>I also added what I think has the most value as a Product Manager : My side projects as a Product Manager.</p>
       <ul>
-        <li class="btn btn-success btn-lg margin-20"><%= link_to "hire me!", contact_path %></li>
+        <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
       </ul>
       <p class="border-white"></p>
     </div>
@@ -167,9 +166,9 @@
     <%= link_to "", about_path(anchor:"journey"), class: "fa-solid fa-arrow-up-long"%>
   </div>
 
-  <div class="container-experience margin-300" id="formation">
+  <div class="container-experience margin-20" id="formation">
     <div class="about-experience">
-      <h2  class="about-title"><i class="fa-solid fa-graduation-cap white"></i> &nbsp Education </h2>
+      <h2  class="white"><i class="fa-solid fa-graduation-cap white"></i> &nbsp Education </h2>
 
       <p>I studied five years to obtain a master in work law, then I completed it with one more year at the Inseec Business School
       in Human Resources Management. Recently I went to Le Wagon bootcamp to learn about Web Development and improve my technical skills.
@@ -214,7 +213,7 @@
     <%= link_to "", about_path(anchor:"experience"), class: "fa-solid fa-arrow-up-long"%>
   </div>
 
-  <h2 class="about-title margin-300"><i class="fa-solid fa-gift"></i>&nbsp Skills</h2>
+  <h2 class="white margin-20"><i class="fa-solid fa-gift"></i>&nbsp Skills</h2>
   <div class="container-skills">
     <div>
       <p><em class="italic">Personnal skills</em></p>
@@ -255,8 +254,8 @@
   </div>
 
 
-  <h2 class="about-title margin-300"><i class="fa-solid fa-pen-nib white"></i>&nbsp Articles</h2>
-  <div class="container-article">
+  <h2 class="white margin-20"><i class="fa-solid fa-pen-nib white"></i>&nbsp Articles</h2>
+  <div class="container-article paragraph-75">
     <p>As a newcomer in the Product Management, I studied a lot about it. I read books, articles, listen to podcasts...
     As I was working I told myself that it might be interesting to share what I was learning and what I wrote with
     people like me that might also be curious about PM. <br>
@@ -267,16 +266,16 @@
     time to be sure that I understand clearly each topic.</p>
     <p>
       So, if you want to read some, it's <span class="underline" id="articles">right there</span> &nbsp<i class="fa-solid fa-hand-point-right red"></i> &nbsp: &nbsp
-      <%= link_to "articles", articles_path, class:"btn btn-primary btn-lg" %>
+      <%= link_to "articles", articles_path, class:"btn btn-primary btn-lg marg-left-30" %>
     </p>
     <p class="border-white"></p>
-  </div>
-  <div class="arrow-direction">
-    <%= link_to "", about_path(anchor:"hobbies"), class: "fa-solid fa-arrow-down-long"%>
-    <%= link_to "", about_path(anchor:"skills"), class: "fa-solid fa-arrow-up-long"%>
+    <div class="arrow-direction">
+      <%= link_to "", about_path(anchor:"hobbies"), class: "fa-solid fa-arrow-down-long"%>
+      <%= link_to "", about_path(anchor:"skills"), class: "fa-solid fa-arrow-up-long"%>
+    </div>
   </div>
 
-  <h2 class="about-title margin-300"><i class="fa-solid fa-gamepad"></i>&nbsp my hobbies</h2>
+  <h2 class="white margin-300"><i class="fa-solid fa-gamepad"></i>&nbsp my hobbies</h2>
   <div class="container-article" id="hobbies">
     <p>I have a lot of hobbies that prevent me to be bored : <br>
     Cinema &#127871 &#127916 &#127903 (Adam Sandler deserve more recognition. Change my mind.) <br>
@@ -284,9 +283,9 @@
     I enjoy spending time in museums &#128444 (I'de like one Vermeer in my room, I had it into my wishlist Amazon) <br>
     I train three times a week &#127947 <br>
     & Christmas is my favorite time of the year &#127876 &#127873</p>
-  </div>
   <div class="arrow-direction pad-5">
     <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-up-long"%>
+  </div>
   </div>
 
   <%# <div class="btn-list-">
