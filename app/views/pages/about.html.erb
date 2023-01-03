@@ -222,45 +222,46 @@
   </div>
 
 
-
-  <h2 class="white margin-20 title"><i class="fa-solid fa-gift"></i>&nbsp Skills</h2>
-  <div class="container-skills">
-    <div>
-      <p><em class="italic underline">Personnal skills</em></p>
-      <ul>
-        <li>creative and problem-solving focused</li>
-        <li>Good communicator and listener</li>
-        <li>Flexible</li>
-        <li>Organized</li>
-      </ul>
-      <p><em class="italic underline" id="skills">Professional skills</em></p>
-      <ul>
-        <li>Conducting Market Research and users tests</li>
-        <li>Defining the vision and the strategy</li>
-        <li>Establishing User stories and the product roadmap</li>
-        <li>Software Development and desing skills</li>
-      </ul>
-      <ul class="margin-5">
-        <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
-      </ul>
-      <p class="border-white"></p>
+  <div class="skills">
+    <h2 class="white margin-20"><i class="fa-solid fa-gift"></i>&nbsp Skills</h2>
+    <div class="container-skills">
+      <div>
+        <p><em class="italic underline">Personnal skills</em></p>
+        <ul>
+          <li>creative and problem-solving focused</li>
+          <li>Good communicator and listener</li>
+          <li>Flexible</li>
+          <li>Organized</li>
+        </ul>
+        <p><em class="italic underline" id="skills">Professional skills</em></p>
+        <ul>
+          <li>Conducting Market Research and users tests</li>
+          <li>Defining the vision and the strategy</li>
+          <li>Establishing User stories and the product roadmap</li>
+          <li>Software Development and desing skills</li>
+        </ul>
+        <ul class="margin-5">
+          <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
+        </ul>
+        <p class="border-white"></p>
+      </div>
+      <div class="border-left">
+        <p><em class="italic underline">Tools & Development environment</em></p>
+        <ul>
+          <li>HTML <i class="fa-brands fa-html5 orange"></i> & CSS <i class="fa-brands fa-css3-alt blue"></i> &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i> <i class="fa-solid fa-plus blue"></i> <i class="fa-solid fa-plus blue"></i></li>
+          <li>Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"> & RubyOnRails <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16">&nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
+          <li>Javascript <i class="fa-brands fa-js jaune"></i> &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i></li>
+          <li>Figma &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i><i class="fa-solid fa-plus blue"></i></li>
+          <li>Trello &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i><i class="fa-solid fa-plus blue"></i></li>
+          <li>Notion &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
+          <li>Github &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
+        </ul>
+      </div>
     </div>
-    <div class="border-left">
-      <p><em class="italic underline">Tools & Development environment</em></p>
-      <ul>
-        <li>HTML <i class="fa-brands fa-html5 orange"></i> & CSS <i class="fa-brands fa-css3-alt blue"></i> &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i> <i class="fa-solid fa-plus blue"></i> <i class="fa-solid fa-plus blue"></i></li>
-        <li>Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"> & RubyOnRails <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16">&nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
-        <li>Javascript <i class="fa-brands fa-js jaune"></i> &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i></li>
-        <li>Figma &nbsp &nbsp &nbsp <i class="fa-solid fa-plus blue"></i><i class="fa-solid fa-plus blue"></i></li>
-        <li>Trello &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i><i class="fa-solid fa-plus blue"></i></li>
-        <li>Notion &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
-        <li>Github &nbsp &nbsp &nbsp<i class="fa-solid fa-plus blue"></i></li>
-      </ul>
+    <div class="arrow-direction">
+      <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-down-long"%>
+      <%= link_to "", about_path(anchor:"formation"), class: "fa-solid fa-arrow-up-long"%>
     </div>
-  </div>
-  <div class="arrow-direction">
-    <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-down-long"%>
-    <%= link_to "", about_path(anchor:"formation"), class: "fa-solid fa-arrow-up-long"%>
   </div>
 
 

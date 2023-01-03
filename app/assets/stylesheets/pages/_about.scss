@@ -132,6 +132,7 @@ h2 {
 .container-skills {
   display: flex;
   justify-content: center;
+  margin-top: 10vh;
 }
 
 .container-article{
@@ -144,12 +145,15 @@ h2 {
   min-height: 80vh;
 }
 
+.skills {
+  min-height: 100vh;
+}
 
 .arrow-direction {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 1rem;
+  // margin-bottom: 10vh;
 }
 
 .fa-hand-point-right {
