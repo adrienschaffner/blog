@@ -1,28 +1,28 @@
-<h1>Article :</h1>
+<h1 align="center">Article :</h1>
 
-<h2><%= @article.title %></h2>
-<p><%= link_to @article.author, author_article_path %></p>
-<% if @article.picture.attached?  %>
-  <%= cl_image_tag @article.picture.key, alt: "article picture", height: 300, crop: :fill %> <br>
-  <%= link_to "modify picture", edit_article_path(@article) %>
-<% end %>
-<%# <p><%= @article.rating %>
-<p><%= @article.body %></p>
-<p><%= @article.rating %></p>
-<% @article.rating.to_i.times do  %>
- <span class="glyphicon glyphicon-star"></span>
-<% end %>
+<div class="well col-xs-8 col-xs-offset-2">
+  <h2><%= @article.title %></h2>
+  <p><%= link_to @article.author, author_article_path %></p>
+  <% if @article.picture.attached?  %>
+    <%= cl_image_tag @article.picture.key, alt: "article picture", height: 300, crop: :fill %> <br>
+    <%= link_to "modify picture", edit_article_path(@article) %>
+  <% end %>
+  <%# <p><%= @article.rating %>
+  <p><%= @article.body %></p>
+  <% @article.rating.to_i.times do  %>
+  <span class="glyphicon glyphicon-star"></span>
+  <% end %>
 
-<ul>
-  <li><%= link_to "Back", articles_path %></li>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article), data: {
-                    turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
-    }%>
-  </li>
-</ul>
-
+  <ul>
+    <li><%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %></li>
+    <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %></li>
+    <li><%= link_to "Destroy", article_path(@article), class: "btn btn-lg btn-danger", data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+      }%>
+    </li>
+  </ul>
+</div>
 <%# redirect_to articles_path %>
 <h2>Commentaires</h2>
   <%= render @article.comments %>

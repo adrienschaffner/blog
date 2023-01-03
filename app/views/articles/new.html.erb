@@ -1,4 +1,13 @@
 <h1>Nouvel article</h1>
+<% if @article.errors.any? %>
+ <h2>The following errors prevented the article from saving:</h2>
+ <ul>
+ <% @article.errors.full_messages.each do |msg|%>
+ <li><%= msg %></li>
+ <% end %>
+ </ul>
+<% end %>
+
 
 <%= render "form", article: @article %>
 <%= link_to "back", articles_path %>
