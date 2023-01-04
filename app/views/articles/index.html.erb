@@ -30,7 +30,11 @@
       <% end %>
     </div>
   <% end %>
-<%= link_to "New Article", new_article_path %>
+  <% if admin_signed_in?  %>
+    <%= link_to "New Article", new_article_path %>
+  <% else %>
+    <%= link_to "sign in",  admin_session_path %>
+  <% end %>
 <%# </ul> %>
 
 <%# <%= link_to "top articles", top_articles_path %>
