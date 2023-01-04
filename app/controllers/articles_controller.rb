@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
-  before_action :set_article, only:[:top, :show, :edit, :update, :destroy, :top, :author, :destroy_picture]
-  before_action :authenticate_admin!, only:[:new, :edit, :update, :destroy, :top, :destroy_picture]
+  # before_action :set_article, only:[:top, :show, :edit, :update, :destroy, :top, :author, :destroy_picture]
+  # before_action :authenticate_admin!, only:[:new, :edit, :update, :destroy, :top, :destroy_picture]
   # skip_before_action :require_login, only: [:index, :create]
   # before_action :require_login, only: [:new, :create, :update, :destroy, :destroy_picture]
 
