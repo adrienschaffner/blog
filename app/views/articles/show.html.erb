@@ -13,6 +13,8 @@
   <span class="glyphicon glyphicon-star"></span>
   <% end %>
 
+  <% if admin_signed_in?  %>
+
   <ul>
     <li><%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %></li>
     <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %></li>
@@ -22,6 +24,10 @@
       }%>
     </li>
   </ul>
+  <% else %>
+    <%# <%= link_to "sign in",  admin_session_path %>
+    <%= link_to "sign in",  new_admin_session_path %>
+  <% end %>
 </div>
 <%# redirect_to articles_path %>
 <h2>Commentaires</h2>

@@ -33,7 +33,8 @@
   <% if admin_signed_in?  %>
     <%= link_to "New Article", new_article_path %>
   <% else %>
-    <%= link_to "sign in",  admin_session_path %>
+    <%# <%= link_to "sign in",  admin_session_path %>
+    <%= link_to "sign in",  new_admin_session_path %>
   <% end %>
 <%# </ul> %>
 

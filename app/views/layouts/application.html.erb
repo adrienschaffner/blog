@@ -17,10 +17,12 @@
   </head>
 
   <body>
-    <p class="notice"> <%= notice %> </p>
-    <p class="alert"> <%= alert %> </p>
-    <%= render "shared/navbar" %>
-    <%= yield %>
+    <header>
+      <%= render "shared/navbar" %>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
     <%= render "shared/footer" %>
   </body>
 </html>
