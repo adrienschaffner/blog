@@ -1,6 +1,9 @@
 class ArticlesController < ApplicationController
   # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
   before_action :set_article, only:[:top, :show, :edit, :update, :destroy, :top, :author, :destroy_picture]
+  # skip_before_action :require_login, only: [:index, :create]
+  # before_action :require_login, only: [:new, :create, :update, :destroy, :destroy_picture]
+
 
   def top
     @articles = Article.where(rating: (5..10))
@@ -62,6 +65,13 @@ class ArticlesController < ApplicationController
   def set_article
     @article = Article.find(params[:id])
   end
+
+  # def require_login
+  #   unless logged_in?
+  #     flash[:error] = "You must be logged in to access this section"
+  #     redirect_to new_login_url # halts request cycle
+  #   end
+  # end
 
   def article_params
     params.require(:article).permit(:title, :body, :status, :rating, :author, :picture)

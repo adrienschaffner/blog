@@ -3,6 +3,7 @@ class CommentsController < ApplicationController
   before_action :set_comments, only: [ :new, :create, :destroy ]
 
   def new
+    @comment = Comment.new(author: cookies[:commenter_name])
   end
 
   def create
@@ -10,6 +11,7 @@ class CommentsController < ApplicationController
     # thus the initial call to the find method of the Article model to get the article in question.
     @comment = @article.comments.create(comment_params)
     if @comment.save
+      flash[:notice] = "thanks for your comment!"
       redirect_to article_path(@article)
     else
       # render :article => "show", status: :unprocessable_entity
