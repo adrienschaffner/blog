@@ -4,20 +4,19 @@
 <p>In here you will find every article I wrote. <br>
  I post time to time, my goal is to give an overview of the Product Manager role and any aspect I find interesting.</p>
 
-<%# <ul> %>
+
   <% @articles.each do |article| %>
     <div class="row">
 
       <% unless article.archived? %>
-        <%# <li> %>
+
         <div class="col-xs-8 col-xs-offset-2">
           <div class="well well-lg">
             <div class="article-title">
-        <%# <a href="/articles/<%= article.id %>
+
               <%=link_to article.title.capitalize, article %>
             </div>
-      <%# </li> %>
-      <%# <li> %>
+
             <div class="article-body">
               <%= truncate(article.body, length: 100) %>
             </div>
@@ -30,13 +29,18 @@
       <% end %>
     </div>
   <% end %>
-  <%# <% if admin_signed_in?  %>
     <%= link_to "New Article", new_article_path %>
-  <%# <% else %>
-    <%# <%= link_to "sign in",  admin_session_path %>
-    <%# <%= link_to "sign in",  new_admin_session_path %>
-  <%# <% end %>
-<%# </ul> %>
+
+    <p class="red"> Test about Devise</p>
+
+  <% if admin_signed_in? %>
+    <%= link_to "New Article", new_article_path %>
+    <%= link_to "log out", destroy_admin_session_path, method: :delete %>
+  <% else %>
+    <%= link_to "sign up",  new_admin_registration_path %>
+    <%= link_to "sign in",  new_admin_session_path %>
+  <% end %>
+
 
 <%# <%= link_to "top articles", top_articles_path %>
 

@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
-  before_action :store_admin_location!, if: :storable_location?
-  before_action :authenticate_admin!
+  # before_action :store_admin_location!, if: :storable_location?
+  # before_action :authenticate_admin!
 
   private
     # Its important that the location is NOT stored if:

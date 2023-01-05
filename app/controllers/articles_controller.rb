@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
 
   before_action :set_article, only: %i[top show edit update destroy top author destroy_picture]
   # User before_action :authenticate_admin! to use Devise
-  # before_action :authenticate_admin!, except: %i[index show]
+  before_action :authenticate_admin!, except: %i[index show]
 
   # before_action :authenticate_admin!, only:[:new, :edit, :update, :destroy, :top, :destroy_picture]
 
