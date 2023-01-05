@@ -2,7 +2,7 @@
 
 <div class="well col-xs-8 col-xs-offset-2">
   <h2><%= @article.title %></h2>
-  <p><%= link_to @article.author, author_article_path %></p>
+  <p><%= link_to "about me", about_path %></p>
   <% if @article.picture.attached?  %>
     <%= cl_image_tag @article.picture.key, alt: "article picture", height: 300, crop: :fill %> <br>
     <%= link_to "modify picture", edit_article_path(@article) %>
@@ -12,11 +12,11 @@
   <% @article.rating.to_i.times do  %>
   <span class="glyphicon glyphicon-star"></span>
   <% end %>
+  <%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %>
 
   <% if admin_signed_in?  %>
 
   <ul>
-    <li><%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %></li>
     <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %></li>
     <li><%= link_to "Destroy", article_path(@article), class: "btn btn-lg btn-danger", data: {
                       turbo_method: :delete,
@@ -26,15 +26,16 @@
   </ul>
   <% else %>
     <%# <%= link_to "sign in",  admin_session_path %>
-    <%= link_to "sign in",  new_admin_session_path %>
+    <%# <%= link_to "sign in",  new_admin_session_path %>
   <% end %>
 </div>
 <%# redirect_to articles_path %>
-<h2>Commentaires</h2>
+<%# <h2>Commentaires</h2>
   <%= render @article.comments %>
 
 <%# Rails is smart enough to spot the forward slash in that string and realize that you want to render the _form.html.erb %>
-<h2>Laisser un commentaire</h2>
-<%# <%= render "form", comment: @article.comment %>
-<%# <%= render ".comments/form", comment: comment %>
-<%= render 'comments/form', comment: @comment %>
+<%# <h2>Laisser un commentaire</h2> %>
+
+
+<%# # the one to use is this following sentence  %>
+<%# <%= render 'comments/form', comment: @comment %>

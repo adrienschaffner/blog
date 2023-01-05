@@ -1,10 +1,15 @@
 class ArticlesController < ApplicationController
-  # http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show]
-  # before_action :set_article, only:[:top, :show, :edit, :update, :destroy, :top, :author, :destroy_picture]
+  # Use http_basic_authenticate_with to access some method easily without devise
+  # http_basic_authenticate_with name: "Adrien", password: "1947", except: [:index, :show]
+
+  before_action :set_article, only: %i[top show edit update destroy top author destroy_picture]
+  # User before_action :authenticate_admin! to use Devise
+  # before_action :authenticate_admin!, except: %i[index show]
+
   # before_action :authenticate_admin!, only:[:new, :edit, :update, :destroy, :top, :destroy_picture]
+
   # skip_before_action :require_login, only: [:index, :create]
   # before_action :require_login, only: [:new, :create, :update, :destroy, :destroy_picture]
-
 
   def top
     @articles = Article.where(rating: (5..10))

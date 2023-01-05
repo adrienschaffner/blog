@@ -21,7 +21,7 @@
             <div class="article-body">
               <%= truncate(article.body, length: 100) %>
             </div>
-        <%# <%= article.rating %>
+        <%= article.rating %>
         <%# <%= article.author %>
         <%# <%= article.body.slice(0...25) %>
       <%# </li> %>
@@ -30,12 +30,12 @@
       <% end %>
     </div>
   <% end %>
-  <% if admin_signed_in?  %>
+  <%# <% if admin_signed_in?  %>
     <%= link_to "New Article", new_article_path %>
-  <% else %>
+  <%# <% else %>
     <%# <%= link_to "sign in",  admin_session_path %>
-    <%= link_to "sign in",  new_admin_session_path %>
-  <% end %>
+    <%# <%= link_to "sign in",  new_admin_session_path %>
+  <%# <% end %>
 <%# </ul> %>
 
 <%# <%= link_to "top articles", top_articles_path %>
