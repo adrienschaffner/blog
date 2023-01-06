@@ -5,8 +5,8 @@
   bottom: 0;
   background: #F4F4F4;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // align-items: center;
+  justify-content: center;
   height: 45px;
   width: 100vw;
   padding: 0;
@@ -14,21 +14,16 @@
 }
 .footer-links {
   display: flex;
-  padding-left: 40%;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
 }
 .footer-links a {
   color: #EDB703;
-  opacity: 0.5;
   text-decoration: none;
   font-size: 24px;
   padding: 0px 10px;
 }
 .footer-links a:hover {
   opacity: 1;
-}
-
-.footer-text {
-  padding-top: 7%;
-  color: #EDB703;
 }
