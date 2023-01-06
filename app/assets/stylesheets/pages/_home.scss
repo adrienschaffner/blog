@@ -2,7 +2,7 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
-.landing {
+.banner {
   min-height: 100vh;
   width: 100vw;
   background: url("./working_place3.jpg");
@@ -13,10 +13,10 @@ main {
 
 .big-text {
   position: absolute;
-  top: 35%;
-  right: 0%;
+  top: 35vh;
+  right: 25vw;
   width: 450px;
-  transform: translate(-50%, -30%);
+  // transform: translate(-50%, -30%);
   font-size: 4rem;
   color: #EDB703;
   text-shadow: 0px 1px;
@@ -44,9 +44,9 @@ main {
   .big-text {
     color: white;
     font-size: 3em;
-    top: 35%;
-    right: -20%;
-    width: 50vw;
+    // top: 35vh;
+    // right: -20%;
+    // width: 50vw;
     text-shadow: 0px 0px 1px #EDB703;
   }
 
@@ -78,9 +78,9 @@ main {
     color: white;
     text-shadow: 0px 0px 1px #EDB703;
     font-size: 3rem;
-    top: 35%;
-    right: -20%;
-    width: 70vw;
+    // top: 35%;
+    // right: -20%;
+    // width: 70vw;
   }
 }
 // .intro {
