@@ -1,50 +1,60 @@
-<h1>Welcome !</h1>
 
-<h3>We have <%= Article.public_count %> articles available !</h3>
-<p>In here you will find every article I wrote. <br>
- I post time to time, my goal is to give an overview of the Product Manager role and any aspect I find interesting.</p>
+<h1 class="index-title">Welcome !</h1>
 
+<h2 class="position-left p-3">There is all my articles available for the moment :</h2>
+<%# <p>In here you will find every article I wrote. I post time to time, my goal is to give an overview of the Product Manager role and any aspect I find interesting.</p> %>
+<%# <p>total : <%= Article.public_count %>
 
-  <% @articles.each do |article| %>
-    <div class="row">
-
-      <% unless article.archived? %>
-
-        <div class="col-xs-8 col-xs-offset-2">
-          <div class="well well-lg">
-            <div class="article-title">
-
-              <%=link_to article.title.capitalize, article %>
-            </div>
-
-            <div class="article-body">
-              <%= truncate(article.body, length: 100) %>
-            </div>
-        <%= article.rating %>
-        <%# <%= article.author %>
-        <%# <%= article.body.slice(0...25) %>
-      <%# </li> %>
+<div class="border-orange">
+<%# <div class="border-red"> %>
+<% @articles.each do |article| %>
+  <%# <div class="row"> %>
+  <%# <div class="row"> %>
+    <% unless article.archived? %>
+      <%# <div class="col-xs-8 col-xs-offset-2"> %>
+      <div class="border-yellow">
+          <div class="border-blue">
+            <%# <%=link_to article.title.capitalize, article %>
+            <%=link_to article.title.capitalize, article %>
           </div>
-        </div>
-      <% end %>
-    </div>
-  <% end %>
-    <%= link_to "New Article", new_article_path %>
+          <%# <div class="article-body"> %>
+          <div class="border-green">
+            <%= truncate(article.body, length: 200) %>
+          </div>
+      </div>
+    <% end %>
+  <%# </div> %>
+<% end %>
+<%# </div> %>
+</div>
+<%# <div class="contact-nav-container">
+  <div class="contact-nav">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href=""><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.linkedin.com/in/adrien-schaffner/"><i class="fa-brands fa-linkedin-in"></i></a>
+  </div>
+</div> %>
 
-    <p class="red"> Test about Devise</p>
 
-  <% if admin_signed_in? %>
-    <%= link_to "New Article", new_article_path %>
-    <%= link_to "log out", destroy_admin_session_path, method: :delete %>
-  <% else %>
-    <%= link_to "sign up",  new_admin_registration_path %>
-    <%= link_to "sign in",  new_admin_session_path %>
-  <% end %>
+
+<% if admin_signed_in? %>
+  <%= link_to "New Article", new_article_path %>
+  <%= link_to "log out", destroy_admin_session_path, method: :delete %>
+<% else %>
+  <%= link_to"", new_admin_registration_path, class:"fa-solid fa-mug-saucer" %>
+  <%= link_to"",  new_admin_session_path, class:"fa-solid fa-mug-saucer"%>
+<% end %>
 
 
 <%# <%= link_to "top articles", top_articles_path %>
 
-      <%# <div class="article-actions">
-          <%= link_to "New Article", new_article_path, class: "btn btn-xs btn-primary" %>
-          <%# <%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure you want to delete this article?"}, class: "btn btn-xs btn-danger" %>
-      <%# </div>  %>
+    <%# <div class="article-actions">
+        <%= link_to "New Article", new_article_path, class: "btn btn-xs btn-primary" %>
+        <%# <%= link_to "Delete", article_path(article), method: :delete, data: { confirm: "Are you sure you want to delete this article?"}, class: "btn btn-xs btn-danger" %>
+    <%# </div>  %>
+ <%# <div class="well well-lg"> %>
+        <%# <div class="article-title"> %>
+          <%# <%= article.rating %>
+      <%# <%= article.author %>
+      <%# <%= article.body.slice(0...25) %>
+    <%# </li> %>

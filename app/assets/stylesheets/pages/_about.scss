@@ -2,12 +2,6 @@ h2 {
   text-align: center;
 }
 
-.body {
-  min-height: 100vh;
-  margin-bottom: 0;
-  background-color: black;
-  color: #EDB703;
-}
 
 .margin-20 {
   margin-top: 20vh;
@@ -68,9 +62,10 @@ h2 {
 }
 
 
-.white-title {
-  color: white;
+.yellow-title {
+  color: #EDB703;
   border-bottom: 1px solid white;
+  max-width: 40vw;
 }
 
 .list-none {

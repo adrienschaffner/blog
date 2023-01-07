@@ -1,0 +1,65 @@
+
+.index-title {
+  // margin-top: 6vh;
+  padding-top: 120px;
+  padding-bottom: 6vh;
+  font-size: 4rem;
+  width: 100vw;
+  text-align: center;
+  letter-spacing: 1rem;
+  // color: white;
+}
+
+.position-left {
+  text-align: left;
+}
+
+
+.border-orange {
+  margin: 0 auto;
+  // border: 2px solid orange;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+  // padding: 5vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+.border-yellow {
+  border-bottom: 2px solid yellow;
+  // padding: 10px;
+}
+
+.border-red {
+  border: 2px solid red;
+  padding: 10px;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+
+}
+
+.border-blue {
+  // border: 2px solid blue;
+  padding: 10px;
+  font-size: 2rem;
+  & a {
+    color: white;
+    font-style: oblique;
+  }
+}
+
+.border-green {
+  // border: 2px solid green;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.fa-mug-saucer {
+  color: black;
+}
