@@ -1,33 +1,42 @@
-<h1 align="center">Article :</h1>
-
 <div class="well col-xs-8 col-xs-offset-2">
-  <h2><%= @article.title %></h2>
-  <p><%= link_to "about me", about_path %></p>
-  <% if @article.picture.attached?  %>
-    <%= cl_image_tag @article.picture.key, alt: "article picture", height: 300, crop: :fill %> <br>
-    <%= link_to "modify picture", edit_article_path(@article) %>
-  <% end %>
+
+  <h2 class="index-title"><%= @article.title %></h2>
+  <div class="article-picture">
+    <% if @article.picture.attached?  %>
+      <%= cl_image_tag @article.picture.key, alt: "article picture", height:337, crop: :fill %> <br>
+      <%# <%= link_to "modify picture", edit_article_path(@article) %>
+    <% end %>
+  </div>
+
   <%# <p><%= @article.rating %>
-  <p><%= @article.body %></p>
-  <% @article.rating.to_i.times do  %>
-  <span class="glyphicon glyphicon-star"></span>
-  <% end %>
-  <%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %>
+  <div class="article-body">
+    <p><%= @article.body %></p>
+  </div>
 
-  <% if admin_signed_in?  %>
 
-  <ul>
-    <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %></li>
-    <li><%= link_to "Destroy", article_path(@article), class: "btn btn-lg btn-danger", data: {
-                      turbo_method: :delete,
-                      turbo_confirm: "Are you sure?"
-      }%>
-    </li>
-  </ul>
-  <% else %>
-    <%# <%= link_to "sign in",  admin_session_path %>
-    <%# <%= link_to "sign in",  new_admin_session_path %>
-  <% end %>
+  <%# <% @article.rating.to_i.times do  %>
+  <%# <span class="glyphicon glyphicon-star"></span>  %>
+  <%# <% end %>
+  <%# <%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %>
+
+  <%= link_to "about me", about_path, class: "btn btn-lg btn-primary" %>
+
+  <div class="btn-show">
+    <% if admin_signed_in?  %>
+
+    <ul>
+      <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %></li>
+      <li><%= link_to "Destroy", article_path(@article), class: "btn btn-lg btn-danger", data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure?"
+        }%>
+      </li>
+    </ul>
+    <% else %>
+      <%= link_to "sign in",  admin_session_path %>
+    <% end %>
+  </div>
+
 </div>
 <%# redirect_to articles_path %>
 <%# <h2>Commentaires</h2>

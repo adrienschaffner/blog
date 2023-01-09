@@ -1,21 +1,28 @@
 
 .index-title {
   // margin-top: 6vh;
-  padding-top: 120px;
-  padding-bottom: 6vh;
-  font-size: 4rem;
+  color: #FCFCFC;
+  width: 100vw;
+  padding-bottom: 3vh;
+  font-size: 3rem;
   width: 100vw;
   text-align: center;
-  letter-spacing: 1rem;
+  letter-spacing: 0.8rem;
+  // text-shadow: 0px 1px;
   // color: white;
 }
 
-.position-left {
+.index-slogan {
+  width: 100vw;
   text-align: left;
+  font-size: 1.2rem;
+  padding-left: 15vw;
 }
 
 
-.border-orange {
+.articles-container {
+  padding-left: 5vh;
+  padding-right: 5vh;
   margin: 0 auto;
   // border: 2px solid orange;
   margin-top: 10vh;
@@ -24,15 +31,11 @@
   width: 80vw;
   display: flex;
   flex-direction: column;
-  height: 30vh;
+  height: 50vh;
   overflow-x:hidden;
   overflow-y:auto;
 }
 
-.border-yellow {
-  border-bottom: 2px solid yellow;
-  // padding: 10px;
-}
 
 .border-red {
   border: 2px solid red;
@@ -44,22 +47,41 @@
 
 }
 
-.border-blue {
+.article-title {
   // border: 2px solid blue;
+  // color: #FFD700;
+  color: #ffc107;
   padding: 10px;
   font-size: 2rem;
   & a {
-    color: white;
-    font-style: oblique;
+    text-decoration: underline;
+    color: #FCFCFC;
+    font-weight: bold;
+    color: #ffc107;
   }
 }
 
-.border-green {
+.article-body {
   // border: 2px solid green;
   padding: 10px;
-  font-size: 1.2rem;
+  // font-size: 1rem;
 }
 
 .fa-mug-saucer {
   color: black;
+}
+
+.read-article {
+  margin: 10px;
+}
+.read-article a {
+  color: #EDB703;
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 1;
+}
+
+.read-article a:hover {
+  // color: #fbac19;
+  opacity: 0.8;
 }
