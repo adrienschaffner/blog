@@ -1,15 +1,25 @@
-<div class="navbar" data-controller="dropdown-menu">
-  <div class="logo">
-    <i class="fa-solid fa-cat"></i>
-    <%= link_to "PMbyA", root_path, class: "logo-title caramel navbar-brand", id: "logo" %>
-    <%# <h1 class="logo-title">PM<span class="caramel">by</span><span class="caveat">A</span></h1> %>
+<div class="navbar sticky" data-controller="dropdown-menu">
+  <div class="navbar-links">
+    <div class="logo">
+      <i class="fa-solid fa-cat"></i>
+      <%= link_to "PMbyA", root_path, class: "logo-title caramel navbar-brand", id: "logo" %>
+      <%# <h1 class="logo-title">PM<span class="caramel">by</span><span class="caveat">A</span></h1> %>
+    </div>
   </div>
+    <div class="footer-links">
+    <%# <div class="footer-text">
+    <p>find me <i class="fa-solid fa-heart"></i> :</p>
+    </div> %>
+      <a href="https://github.com/adrienschaffner"><i class="fab fa-github"></i></a>
+      <a href="https://twitter.com/AdrienSchffnr"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/adrien-schaffner/"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
   <div class="nav-links">
-    <ul class="">
+    <ul>
       <li> <%= link_to "Home", root_path %></li>
       <li class=""><%= link_to "About me", about_path %></li>
       <li class=""><%= link_to "Articles", articles_path %></li>
-      <li class=""><%= link_to "Projects" %></li>
+      <li class=""><%= link_to "Projects", project_path %></li>
       <li class=""><%= link_to "Contact", contact_path %></li>
     </ul>
   </div>

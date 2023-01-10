@@ -1,5 +1,5 @@
 .contact-body {
-  min-height: 85vh;
+  min-height: 100vh;
  background-color: black;
  color: #EDB703;
 }
@@ -18,10 +18,15 @@
   }
 }
 
+// p:first-child {
+//   color: #437CBC;
+//   }
+
 .contact-nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  max-width: 50vw;
   & a {
     color: #EDB703;
   font-size: 2rem;
