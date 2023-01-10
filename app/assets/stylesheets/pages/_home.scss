@@ -37,6 +37,24 @@ main {
 }
 
 
+.transform-x-20 {
+  transform: translateX(8vw);
+  transition: 0.7s ease-out;
+}
+
+.transform-x-20-reverse {
+  transform: translateX(-8vw);
+  transition: 0.7s ease-out;
+}
+
+.transform-y-50 {
+  transform: translateY(-50%);
+  transition: 0.7s ease-out;
+  // height: 0%;
+}
+
+
+
 @media screen and (max-width:950px){
   .big-text {
     font-size: 3em;
@@ -54,6 +72,11 @@ main {
     padding-right: 15vw;
     width: 80vw;
   }
+
+  .transform-x-20 {
+    // transform: translateX(5vw);
+    transition: 0.7s ease-out;
+  }
 }
 
 @media screen and (max-width:700px) {
@@ -69,12 +92,27 @@ main {
     width: 100vw;
     padding: 5vh;
   }
+
+  .transform-x-20 {
+    transform: translateX(8vw);
+    transition: 0.7s ease-out;
+  }
 }
 
 @media screen and (max-width:500px) {
 
   .big-text {
     font-size: 2rem;
+    width: 100vw;
+  }
+
+  .btn-list {
+    // border: 1px solid red;
+  }
+
+  .transform-x-20 {
+    transform: translateY(-5vh);
+    transition: 0.7s ease-out;
   }
 }
 

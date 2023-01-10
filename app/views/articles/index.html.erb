@@ -1,35 +1,35 @@
 
-<h1 class="index-title">Welcome to my blog's articles !</h1>
-
-<p class="index-slogan">To share some of what I know.</p>
+<h1 class="index-title">Articles</h1>
+<div class="index-slogan">
+  <p>To share some of what I know.</p>
+</div>
 <%# <p>In here you will find every article I wrote. I post time to time, my goal is to give an overview of the Product Manager role and any aspect I find interesting.</p> %>
 <%# <p>total : <%= Article.public_count %>
 
 <div class="articles-container">
-<%# <div class="border-red"> %>
+
 <% @articles.each do |article| %>
-  <%# <div class="row"> %>
-  <%# <div class="row"> %>
+
     <% unless article.archived? %>
-      <%# <div class="col-xs-8 col-xs-offset-2"> %>
-      <div>
-          <div class="article-title">
-          <%= article.id %>
-            <%# <%=link_to article.title.capitalize, article %>
-            <%=link_to article.title.capitalize, article %>
-          </div>
-          <%# <div class="article-body"> %>
-          <div class="article-body">
-            <%= truncate(article.body, length: 200) %>
-          </div>
-          <div class="read-article">
-            <%= link_to "read more", article %>
-          </div>
-      </div>
+
+        <div class="article-container">
+            <div class="article-title">
+              <%= article.id %>
+              <%=link_to article.title.capitalize, article %>
+            </div>
+            <%= link_to article do %>
+              <div class="article-body">
+                <%= truncate(article.body, length: 200) %>
+              </div>
+            <% end %>
+            <div class="read-article">
+              <%= link_to "read more", article %>
+            </div>
+        </div>
     <% end %>
-  <%# </div> %>
+
 <% end %>
-<%# </div> %>
+
 </div>
 <%# <div class="contact-nav-container">
   <div class="contact-nav">
@@ -38,7 +38,6 @@
     <a href="https://www.linkedin.com/in/adrien-schaffner/"><i class="fa-brands fa-linkedin-in"></i></a>
   </div>
 </div> %>
-
 
 
 <% if admin_signed_in? %>
