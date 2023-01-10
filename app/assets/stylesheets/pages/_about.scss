@@ -138,12 +138,6 @@
   // min-height: 80vh;
 }
 
-
-
-
-
-
-
 .m-t-20 {
   margin: 10vh;
 }
@@ -187,9 +181,6 @@
 .list-none {
   list-style: none;
 }
-
-
-
 
 
 .arrow-container {
@@ -247,13 +238,38 @@
 @media screen and (max-width:900px){
 
 
-  .margin-20 {
+  .m-t-20 {
     margin: 5vh;
+  }
+
+
+  .yellow-title {
+    letter-spacing: 0.5rem;
+    border-bottom: 0.5px solid white;
+    max-width: 50vw;
+    padding: 3vh;
+    font-size: 2rem;
   }
 
   .intro-container {
     flex-direction: column;
-    gap: 0;
+    gap: 2rem;
+  }
+
+  .intro-container .display-3 {
+    font-size: 2rem;
+  }
+
+  .arrow-container .arrow-direction {
+    display: none;
+  }
+
+  .intro-container p {
+    font-size: 1rem;
+  }
+
+  .intro-container .paragraph {
+    max-width: 90vw;
   }
 
   .avatar {
@@ -262,59 +278,31 @@
     border-radius: 120px;
   }
 
-  .container-welcome {
-    align-items: center;
-    width: 100vw;
-  }
-
-  .paragraph {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .paragraph-journey {
-    // display: flex;
-    // flex-direction: column;
-    // width: 100vw;
-    border-left: 2px solid white;
-    height: 40vh;
-    padding: 10px;
-    overflow-x:hidden;
-    overflow-y: auto;
-  }
-
-
-  .container-experience {
-    display: flex;
+  .experience-container {
+    padding-top: 20vh;
     flex-direction: column;
-    // min-width: 100vw;
-  //   // justify-content: space-evenly;
-  //   // min-height: 70vh;
+    width: 90vw;
+    justify-content: space-evenly;
+    // min-height: 70vh;
   }
 
-  .about {
-    max-width: 100vw;
-
-    & .btn {
-      display: none;
-    }
-    & .border-white {
-      display: none;
-    }
+  .experience-container .about {
+    width: 85vw;
+    text-align: center;
+    align-items: center;
   }
 
+  .experience-container .border-white {
+    display: none;
+  }
+
+  .experience-container ul {
+    padding-left: 0px;
+  }
 
   .container-scroll {
-  //   display: flex;
-  //   flex-direction: column;
-    width: 75vw;
-  //   height: 60vh;
-  //   padding: 10px;
-  //   border-left: 2px solid white;
-  //   overflow-x:hidden;
-  //   overflow-y:auto;
+    width: 85vw;
   }
-
 
   .container-skills {
     display: flex;
@@ -322,30 +310,94 @@
     margin: 0 40px;
   }
 
-  .container-skills .btn {
-    display: none;
+  .text-center {
+    text-align: center;
   }
 
-  .container-article {
-    margin: 0 40px;
-    // width: 65%;
-    & .btn {
-      margin-top: 20px;
-    }
+  .text-center ul {
+    list-style: none;
   }
 
-  .fa-hand-point-right {
-    display: none;
+  .container-skills .skills-row {
+    flex-direction: column;
   }
 
-  .container-skills .border-white {
-    display: none;
+  .container-skills .skills-row .skills-column {
+    width: 80vw;
   }
-  // .container-skills btn-success {
+
+  // .container-welcome {
+  //   align-items: center;
+  //   width: 100vw;
+  // }
+
+
+  // .paragraph-journey {
+  //   // display: flex;
+  //   // flex-direction: column;
+  //   // width: 100vw;
+  //   border-left: 2px solid white;
+  //   height: 40vh;
+  //   padding: 10px;
+  //   overflow-x:hidden;
+  //   overflow-y: auto;
+  // }
+
+
+  // .about {
+  //   max-width: 100vw;
+
+  //   & .btn {
+  //     display: none;
+  //   }
+  //   & .border-white {
+  //     display: none;
+  //   }
+  // }
+
+
+  // .container-scroll {
+  // //   display: flex;
+  // //   flex-direction: column;
+  //   width: 75vw;
+  // //   height: 60vh;
+  // //   padding: 10px;
+  // //   border-left: 2px solid white;
+  // //   overflow-x:hidden;
+  // //   overflow-y:auto;
+  // }
+
+
+  // .container-skills {
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin: 0 40px;
+  // }
+
+  // .container-skills .btn {
   //   display: none;
   // }
-  .fa-arrow-down-long, .fa-arrow-up-long {
-    display: none;
-  }
+
+  // .container-article {
+  //   margin: 0 40px;
+  //   // width: 65%;
+  //   & .btn {
+  //     margin-top: 20px;
+  //   }
+  // }
+
+  // .fa-hand-point-right {
+  //   display: none;
+  // }
+
+  // .container-skills .border-white {
+  //   display: none;
+  // }
+  // // .container-skills btn-success {
+  // //   display: none;
+  // // }
+  // .fa-arrow-down-long, .fa-arrow-up-long {
+  //   display: none;
+  // }
 
 }
