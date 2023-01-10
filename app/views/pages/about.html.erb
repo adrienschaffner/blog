@@ -1,6 +1,6 @@
-<div class="about-container" data-controller="background-color">
+<div class="about-container" data-controller="scroll" data-action="scroll@window">
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="intro-container m-t-20" id="intro">
       <%= cl_image_tag "cjqsvdvhp3dhbs456krj", alt: "moi qui profite", height:300, crop: :fill, class:"avatar" %>
 
@@ -15,15 +15,15 @@
         <p class="border-white"></p>
       </div>
     </div>
-    <div class="arrow-direction">
+    <div class="arrow-direction reveal-2">
       <%= link_to "", about_path(anchor:"journey"), class: "fa-solid fa-arrow-down-long"%>
     </div>
   </div>
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="journey-container m-t-20">
       <%# <div class="m-t-20"> %>
-        <h2 class="yellow-title" > My historical journey</h2>
+        <h2 class="blue-title" > My historical journey</h2>
         <div class="journey-paragraph">
           <p>Long ago...</p>
           <p id="journey">I studied work law and human resources for several years. <br>
@@ -51,18 +51,19 @@
         </div>
       <%# </div> %>
     </div>
-    <div class="arrow-direction">
+    <div class="arrow-direction reveal-2">
       <%= link_to "", about_path(anchor:"intro"), class: "fa-solid fa-arrow-up-long" %>
       <%= link_to "", about_path(anchor:"experience"), class: "fa-solid fa-arrow-down-long"%>
     </div>
   </div>
 
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="experience-container m-t-20">
       <%# <div class="about-column"> %>
       <div class="about">
-        <h2 class="yellow-title"><i class="fa-solid fa-briefcase"></i>&nbsp Experience</h2>
+      <%# <i class="fa-solid fa-briefcase"></i>&nbsp %>
+        <h2 class="blue-title"> Experience</h2>
           <p id="experience">During my past career in Human Resources I switched from a great but quit old-fashioned company to another,
           more of a start up, and that's when I entered a new way
           to work, faster, modern and dealing with new technology. <br>
@@ -78,10 +79,10 @@
 
       <div class="container-scroll">
         <div class="border-bottom">
-          <p>June 2022 - now</p>
+          <p><span class="yellow">June 2022 - now</span></p>
           <h4 class="blue">CASUAL</h4>
           <p>Bordeaux</p>
-          <p class="underline white">Product Manager & Founder</p>
+          <p class="underline">Product Manager & Founder</p>
           <ul>
             <li class="list-none"><em class="italic">Discovery</em></li>
             <li>Determine the vision to achieve and the strategy to succeed</li>
@@ -100,10 +101,10 @@
         </div>
 
         <div class="border-bottom">
-          <p>June 2022 - december 2022</p>
+          <p><span class="yellow">June 2022 - december 2022</span></p>
           <h4 class="blue">CRUSHS</h4>
           <p>Bordeaux</p>
-          <p class="underline white">Product Manager & Co-founder</p>
+          <p class="underline purple">Product Manager & Co-founder</p>
           <ul>
             <li class="list-none"><em class="italic">Discovery</em></li>
             <li>Determine the vision to achieve and the strategy to succeed</li>
@@ -123,7 +124,7 @@
         </div>
 
         <div class="border-bottom">
-          <p>Septembre 2019 - June 2021 - cdi </p>
+          <p><span class="yellow">Septembre 2019 - June 2021 - cdi</span></p>
           <h4 class="blue">QAPA</h4>
           <p>Bordeaux</p>
           <p class="underline white">Account Developer</p>
@@ -142,7 +143,7 @@
         </div>
 
         <div class="border-bottom">
-          <p>March 2017 - May 2019 - pro contract-cdi </p>
+          <p><span class="yellow">March 2017 - May 2019 - pro contract-cdi</span></p>
           <h4 class="blue">KELLY SERVICES</h4>
           <p>Bordeaux</p>
           <p class="underline white">Recruiter</p>
@@ -162,7 +163,7 @@
         </div>
       </div>
     </div>
-    <div class="arrow-direction">
+    <div class="arrow-direction reveal-2">
       <%= link_to "", about_path(anchor:"journey"), class: "fa-solid fa-arrow-up-long" %>
       <%= link_to "", about_path(anchor:"formation"), class: "fa-solid fa-arrow-down-long"%>
     </div>
@@ -171,11 +172,12 @@
 
 
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="experience-container m-t-20">
       <%# <div class="flex-column"> %>
         <div class="about">
-          <h2  class="yellow-title"><i class="fa-solid fa-graduation-cap"></i> &nbsp Education </h2>
+        <%# <i class="fa-solid fa-graduation-cap"></i> &nbsp  %>
+          <h2  class="blue-title">Education </h2>
 
           <p id="formation">I studied five years to obtain a master in work law, then I completed it with one more year at the Inseec Business School
           in Human Resources Management. Recently I went to Le Wagon bootcamp to learn about Web Development and improve my technical skills.
@@ -187,7 +189,7 @@
         </div>
       <%# </div> %>
       <div class="container-scroll text-center">
-        <p>June 2022 - <span class="blue">Le Wagon</span></p>
+        <p> <span class="yellow">June 2022 </span>- <span class="blue">Le Wagon</span></p>
         <p class="underline white">Web Development</p>
         <ul>
           <li>Web and DB fundamentals</li>
@@ -196,7 +198,7 @@
           <li>Fullstack with Ruby on Rails framework <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16"></li>
         </ul>
 
-        <p>June 2017 - <span class="blue">INSEEC</span></p>
+        <p><span class="yellow">June 2017 </span>- <span class="blue">INSEEC</span></p>
         <p class="underline white">Master Human Resource Management</p>
         <ul>
           <li>Contract, lay-off, mutation, ...</li>
@@ -208,7 +210,7 @@
         </ul>
 
 
-        <p>June 2016 - <span class="blue">IEJ</span></p>
+        <p><span class="yellow">June 2016 </span>- <span class="blue">IEJ</span></p>
         <p class="underline white">Preparation for the legal exam to become a lawyer</p>
 
 
@@ -216,19 +218,20 @@
         <p class="underline white">Master Work Law</p>
       </div>
     </div>
-    <div class="arrow-direction">
+    <div class="arrow-direction reveal-2">
       <%= link_to "", about_path(anchor:"experience"), class: "fa-solid fa-arrow-up-long" %>
       <%= link_to "", about_path(anchor:"skills"), class: "fa-solid fa-arrow-down-long"%>
     </div>
   </div>
 
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="container-skills m-t-20">
-      <h2 class="yellow-title"><i class="fa-solid fa-gift"></i>&nbsp Skills</h2>
+    <%# <i class="fa-solid fa-gift"></i>&nbsp %>
+      <h2 class="purple-title">Skills</h2>
         <div class="skills-row">
           <div class="skills-column" id="skills">
-            <h5 class="italic underline">Personnal skills</h5>
+            <h5 class="italic underline purple">Personnal skills</h5>
             <ul>
               <li>creative and problem-solving focused</li>
               <li>Good communicator and listener</li>
@@ -238,7 +241,7 @@
           </div>
 
           <div class="skills-column">
-            <h5 class="italic underline">Professional skills</h5>
+            <h5 class="italic underline purple">Professional skills</h5>
             <ul>
               <li>Conducting Market Research and users tests</li>
               <li>Defining the vision and the strategy</li>
@@ -248,7 +251,7 @@
           </div>
 
           <div class="skills-column">
-            <h5 class="italic underline">Tools & Development environment</h5>
+            <h5 class="italic underline purple">Tools & Development environment</h5>
             <ul>
               <li>HTML <i class="fa-brands fa-html5 orange"></i> & CSS <i class="fa-brands fa-css3-alt blue"></i></li>
               <li>Ruby <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Ruby_logo.svg" alt="ruby" width="16" height="16"> & RubyOnRails <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Ruby_On_Rails_Logo.svg" alt="rails" height="16"></li>
@@ -263,7 +266,7 @@
         </div>
         <p class="border-white"></p>
       </div>
-    <div class="arrow-direction">
+    <div class="arrow-direction reveal-2">
       <%= link_to "", about_path(anchor:"formation"), class: "fa-solid fa-arrow-up-long" %>
       <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-down-long"%>
     </div>
@@ -274,9 +277,10 @@
 
 
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="container-article m-t-20">
-      <h2 class="yellow-title"><i class="fa-solid fa-pen-nib"></i>&nbsp Articles</h2>
+    <%# <i class="fa-solid fa-pen-nib"></i>&nbsp  %>
+      <h2 class="blue-title">Articles</h2>
       <p id="articles">As a newcomer in the Product Management, I studied a lot about it. I read books, articles, listen to podcasts...
       As I was working I told myself that it might be interesting to share what I was learning and what I wrote with
       people like me that might also be curious about PM. <br>
@@ -296,15 +300,16 @@
       </p>
       <p class="border-white"></p>
     </div>
-    <div class="arrow-direction">
+    <div class="arrow-direction reveal-2">
       <%= link_to "", about_path(anchor:"skills"), class: "fa-solid fa-arrow-up-long" %>
       <%= link_to "", about_path(anchor:"hobbies"), class: "fa-solid fa-arrow-down-long"%>
     </div>
   </div>
 
-  <div class="arrow-container">
+  <div class="arrow-container reveal-1">
     <div class="container-article m-t-20" id="hobbies">
-      <h2 class="yellow-title"><i class="fa-solid fa-gamepad"></i>&nbsp my hobbies</h2>
+    <%# <i class="fa-solid fa-gamepad"></i>&nbsp  %>
+      <h2 class="blue-title">my hobbies</h2>
       <p>I have a lot of hobbies that prevent me to be bored : <br>
       Cinema &#127871 &#127916 &#127903 ( deserve more recognition. Change my mind.) <br>
       I practice guitar as often as I can &#127928 &#127926 (if you want to jam one day, with great pleasure !) <br>
@@ -313,7 +318,7 @@
       & Christmas &#127876 is my favorite time of the year &#127873</p>
       <%= link_to "Contact me !", contact_path, class:"btn btn-success btn-lg" %>
     </div>
-    <div class="arrow-direction pad-5">
+    <div class="arrow-direction pad-5 reveal-2">
       <%= link_to "", about_path(anchor:"articles"), class: "fa-solid fa-arrow-up-long"%>
     </div>
   </div>
@@ -322,7 +327,7 @@
 
 
 
-<div class="about-container" data-color="violet">
+<%# <div class="about-container" data-color="violet">
   <h2>Violet panel</h2>
 </div>
 <div class="about-container" data-color="indigo">
@@ -342,7 +347,7 @@
 </div>
 <div class="about-container" data-color="red">
   <h2>Red panel</h2>
-</div>
+</div> %>
 <%# <div class="btn-list-">
   <ul>
   <li class="btn btn-primary btn-lg"><%= link_to "articles", articles_path %>

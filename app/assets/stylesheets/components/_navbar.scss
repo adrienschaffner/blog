@@ -4,6 +4,7 @@
 
 .navbar {
   overflow: hidden;
+  z-index: 500;
   // margin-bottom: 100px;
   background-color: black;
   display: flex;
@@ -43,9 +44,6 @@
 
 .navbar .fa-bars {
   display: none;
-  // position: absolute;
-  // top: 50px;
-  // right: 50px;
   font-size: 35px;
   color: white;
 }
