@@ -23,6 +23,7 @@ main {
   text-shadow: 0px 1px;
 }
 
+
 .btn-list {
   display: flex;
   justify-content: space-evenly;
@@ -32,9 +33,22 @@ main {
   align-items: center;
 }
 
-.btn-list a {
-  color: white;
-}
+// .btn {
+//   display: block;
+//  }
+
+// .btn-list .btn a {
+//   color: black;
+//   display: block;
+// }
+
+// .btn-list .btn a:hover {
+//     color: white;
+// }
+
+// .btn-list a {
+//   color: black;
+// }
 
 
 .transform-x-20 {

@@ -14,8 +14,8 @@ export default class extends Controller {
     // const btn_login = document.querySelector('.btn-login');
     // Event.preventDefaulft()
     var delayInMilliseconds = 2000; //1 second
-    var delayInMilliseconds2100 = 2100;
-    var delayInMilliseconds2400 = 2400;
+    var delayInMilliseconds1100 = 1100;
+    var delayInMilliseconds1400 = 1400;
     // var delayInMilliseconds2900 = 2900;
 
     // setTimeout(function() {
@@ -31,12 +31,12 @@ export default class extends Controller {
     setTimeout(function() {
       //your code to be executed after 1 second
       window.addEventListener ("load", title.classList.add('transform-x-20'))
-    }, delayInMilliseconds);
+    }, delayInMilliseconds1100);
 
     setTimeout(function() {
       //your code to be executed after 1 second
       window.addEventListener ("load", slogan.classList.add('translate-x-30'))
-    }, delayInMilliseconds);
+    }, delayInMilliseconds1100);
 
     // setTimeout(function() {
     //   //your code to be executed after 1 second
@@ -52,6 +52,6 @@ export default class extends Controller {
       console.log("help help")
       // window.addEventListener ("load", btn.classList.add('transform-x-20'))
       window.addEventListener ("load", btn.classList.add('transform-x-20-reverse'))
-    }, delayInMilliseconds);
+    }, delayInMilliseconds1400);
   }
 }

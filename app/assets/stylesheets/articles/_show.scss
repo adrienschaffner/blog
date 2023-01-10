@@ -16,6 +16,7 @@
 .page-content .body-show {
   // border: 2px solid red;
   max-width: 50vw;
+  min-height: 60vh;
   padding: 5vh;
   text-align: center;
   font-size: 1.2rem;
@@ -28,12 +29,11 @@
 }
 
 
-.picture-show {
-  width: 100vw;
-}
+
 
 .picture-show .picture {
   width: 40vw;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;

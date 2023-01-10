@@ -32,7 +32,7 @@
 }
 
 .green-title {
-  color: #73C043;
+  color: #167247;
   letter-spacing: 0.8rem;
   border-bottom: 1px solid white;
   max-width: 50vw;
@@ -150,6 +150,10 @@
   align-items: flex-start;
 }
 
+.list-none ul {
+  list-style: none;
+}
+
 .container-skills .skills-row .skills-column {
   display: flex;
   flex-direction: column;
@@ -214,10 +218,6 @@
   color: white;
 }
 
-.list-none {
-  list-style: none;
-}
-
 
 .arrow-container {
   display: flex;
@@ -259,8 +259,8 @@
 }
 
 .fa-arrow-up-long:hover{
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   transition-duration: 0.3s;
 }
 
