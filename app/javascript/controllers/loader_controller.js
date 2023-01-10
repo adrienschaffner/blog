@@ -35,7 +35,7 @@ export default class extends Controller {
 
     setTimeout(function() {
       //your code to be executed after 1 second
-      window.addEventListener ("load", slogan.classList.add('transform-x-20'))
+      window.addEventListener ("load", slogan.classList.add('translate-x-30'))
     }, delayInMilliseconds);
 
     // setTimeout(function() {

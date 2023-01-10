@@ -2,7 +2,7 @@
 .index-title {
   margin-top: 10vh;
   // color: #FCFCFC;
-  color: #EDB703;
+  color: #437CBC;
   width: 100vw;
   padding-bottom: 3vh;
   font-size: 3rem;
@@ -23,8 +23,7 @@
   padding-left: 5vh;
   padding-right: 5vh;
   margin: 0 auto;
-  margin-top: 10vh;
-  margin-bottom: 20vh;
+
   width: 65vw;
   display: flex;
   flex-direction: column;
@@ -34,7 +33,10 @@
 
 
 .article-container {
-  // border: 0.5px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 0.5px solid white;
   // box-shadow: 1px 1px 3px #B6B4BB;
   margin-top: 5vh;
   border-radius: 4px;
@@ -81,4 +83,9 @@
   color: #EDB703;
   font-size: 1.2rem;
   font-style: italic;
+}
+
+.translate-x-30 {
+  transform: translateX(30vh);
+  transition: 0.7s ease-out;
 }
