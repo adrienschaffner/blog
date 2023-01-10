@@ -1,12 +1,13 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["loader", "title", "btn-list"]
+  static targets = ["loader", "title", "btn-list", "index-slogan"]
 
   connect() {
     console.log("hello from loader controller ! ")
     // const loader = document.querySelector('.loader');
     // const slider = document.querySelector('.slider');
+    const slogan = document.querySelector('.index-slogan')
     const title = document.querySelector('.big-text');
     // const slogan = document.querySelector('.font-slogan');
     const btn = document.querySelector('.btn-list');
@@ -32,10 +33,10 @@ export default class extends Controller {
       window.addEventListener ("load", title.classList.add('transform-x-20'))
     }, delayInMilliseconds);
 
-    // setTimeout(function() {
-    //   //your code to be executed after 1 second
-    //   window.addEventListener ("load", slogan.classList.add('transform-slogan'))
-    // }, delayInMilliseconds2400);
+    setTimeout(function() {
+      //your code to be executed after 1 second
+      window.addEventListener ("load", slogan.classList.add('transform-x-20'))
+    }, delayInMilliseconds);
 
     // setTimeout(function() {
     //   //your code to be executed after 1 second
@@ -51,6 +52,6 @@ export default class extends Controller {
       console.log("help help")
       // window.addEventListener ("load", btn.classList.add('transform-x-20'))
       window.addEventListener ("load", btn.classList.add('transform-x-20-reverse'))
-    }, delayInMilliseconds2400);
+    }, delayInMilliseconds);
   }
 }

@@ -2,7 +2,7 @@
    text-decoration: none;
 }
 
-.navbar{
+.navbar {
   overflow: hidden;
   // margin-bottom: 100px;
   background-color: black;
@@ -72,6 +72,7 @@
 @media screen and (max-width:900px){
   .navbar {
     padding: 0;
+    justify-content: space-between;
   }
 
   .navbar .logo {
@@ -112,5 +113,9 @@
   .navbar .nav-links ul li {
     margin: 25px 0;
     font-size: 1.2em;
+  }
+
+  .navbar-links {
+    justify-content: center;
   }
 }
