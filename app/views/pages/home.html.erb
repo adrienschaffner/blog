@@ -3,30 +3,32 @@
 
 <%# <p>Now is <%= Time.now %>
 <div data-controller="loader">
-  <%# <main> %>
-    <div class="banner">
-      <h2 class="big-text">A bit of me and Product Management</h2>
-      <%# <div>
-        <h1 class=""><span>Welcome</span> <span>to</span> <span>my</span> <span>modest</span> <span>page</span> <span>about</span> <span>Product</span> <span>and</span> <span>other</span> <span>stuffs</span></h1>
-      </div> %>
+  <main>
+    <section class="landing">
+      <div class="banner">
+        <h2 class="big-text">A bit of me and Product Management</h2>
+        <%# <div>
+          <h1 class=""><span>Welcome</span> <span>to</span> <span>my</span> <span>modest</span> <span>page</span> <span>about</span> <span>Product</span> <span>and</span> <span>other</span> <span>stuffs</span></h1>
+        </div> %>
 
-      <div>
-        <ul class="btn-list">
-          <li class="btn btn-warning btn-lg"><%= link_to "know me", about_path %></li>
-          <li class="btn btn-warning btn-lg"><%= link_to "articles", articles_path %></li>
-          <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
-          <%# <li class="btn btn-outline-dark btn-lg"><%= link_to "hire me!", contact_path %>
-        </ul>
+        <div>
+          <ul class="btn-list">
+            <li class="btn btn-warning btn-lg"><%= link_to "know me", about_path %></li>
+            <li class="btn btn-warning btn-lg"><%= link_to "articles", articles_path %></li>
+            <li class="btn btn-success btn-lg"><%= link_to "hire me!", contact_path %></li>
+            <%# <li class="btn btn-outline-dark btn-lg"><%= link_to "hire me!", contact_path %>
+          </ul>
+        </div>
+
+
+        <%# <div class="footer">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <p>copyright myself <i class="fa-solid fa-heart"></i></p>
+        </div> %>
       </div>
-
-
-      <%# <div class="footer">
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-        <p>copyright myself <i class="fa-solid fa-heart"></i></p>
-      </div> %>
-    </div>
-  <%# </main> %>
+    </section>
+  </main>
 
   <div class="intro">
     <div class="intro-text">
