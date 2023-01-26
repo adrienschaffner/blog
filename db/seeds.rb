@@ -8,15 +8,15 @@
 require 'faker'
 
 Article.destroy_all
-40.times do |index|
-  Article.create!(title: Faker::Movies::Ghostbusters.character,
-    body: Faker::Movies::BackToTheFuture.quote,
-    status: "public",
-    rating: 5,
-    author: Faker::Movies::BackToTheFuture.character,
-    # picture: Faker::Avatar.image,
-  )
-end
+# 40.times do |index|
+#   Article.create!(title: Faker::Movies::Ghostbusters.character,
+#     body: Faker::Movies::BackToTheFuture.quote,
+#     status: "public",
+#     rating: 5,
+#     author: Faker::Movies::BackToTheFuture.character,
+#     # picture: Faker::Avatar.image,
+#   )
+# end
 
 p "Created #{Article.count} articles"
 
