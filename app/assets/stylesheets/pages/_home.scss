@@ -2,6 +2,17 @@ main {
   font-family: "Poppins", sans-serif;
 }
 
+.btn-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 60vw;
+  padding-right: 10vw;
+  box-sizing: border-box;
+  align-items: center;
+  list-style-type: none;
+}
+
+
 .banner {
   min-height: 100vh;
   width: 100vw;
@@ -18,37 +29,11 @@ main {
   padding-right: 10vw;
   width: 60vw;
   font-size: 4rem;
+  font-weight: 800;
   letter-spacing: 1rem;
   color: black;
   text-shadow: 0px 1px;
 }
-
-
-.btn-list {
-  display: flex;
-  justify-content: space-evenly;
-  width: 60vw;
-  padding-right: 10vw;
-  box-sizing: border-box;
-  align-items: center;
-}
-
-// .btn {
-//   display: block;
-//  }
-
-// .btn-list .btn a {
-//   color: black;
-//   display: block;
-// }
-
-// .btn-list .btn a:hover {
-//     color: white;
-// }
-
-// .btn-list a {
-//   color: black;
-// }
 
 
 .transform-x-20 {
@@ -68,13 +53,62 @@ main {
 }
 
 
+.landing {
+  min-height: 100vh;
+  background-size: cover;
+  // padding: 0rem 5rem;
+}
 
-@media screen and (max-width:950px){
+.intro {
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  color: rgb(233, 233, 233);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+// .slider {
+//   background: rgb(19, 18, 18);
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   width: 100vw;
+//   height: 100vh;
+//   transform: translateY(100vh);
+// }
+
+
+.hide {
+  background: black;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.hide span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+
+
+
+@media screen and (max-width:1065px){
   .big-text {
     font-size: 3em;
     letter-spacing: 0.8rem;
     font-weight: bolder;
     width: 80vw;
+    text-align: right;
 
   }
 
@@ -87,20 +121,37 @@ main {
     width: 80vw;
   }
 
+  .btn-warning {
+    width: 140px;
+  }
+
+  .btn-warning a {
+    font-size: 1.3rem;
+  }
+
+  .btn-danger {
+    width: 140px;
+  }
+
+  .btn-danger a {
+    font-size: 1.3rem;
+  }
+
   .transform-x-20 {
     // transform: translateX(5vw);
     transition: 0.7s ease-out;
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:750px) {
 
   .big-text {
     color: black;
     text-shadow: 0px 0px 1px black;
-    font-size: 2.7rem;
+    font-size: 3.7rem;
     width: 100vw;
     padding: 5vh;
+    text-align: center;
   }
 
 
@@ -119,10 +170,15 @@ main {
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:530px) {
+
+  .banner {
+    max-height: 100vh;
+  }
 
   .big-text {
-    font-size: 2rem;
+    text-align: center;
+    font-size: 2.6rem;
     width: 100vw;
     letter-spacing: 0.5rem;
   }
@@ -135,49 +191,66 @@ main {
   .transform-x-20-reverse {
     transform: translate(0);
   }
-
 }
 
+@media screen and (max-width: 530px) {
+    .btn-danger {
+      width: 120px;
+    }
 
+    ;.btn-warning {
+      width: 120px;
+    }
 
+    .btn-danger a {
+      font-size: 1rem;
+    }
 
+    .btn-warning a {
+      font-size: 1rem;
+    }
+}
+@media screen and (max-width: 415px) {
 
+    .big-text {
+      width: 100vw;
+      font-size: 2.2rem;
+    }
+    .btn-danger {
+      width: 90px;
+    }
 
+    ;.btn-warning {
+      width: 90px;
+    }
 
+    .btn-danger a {
+      font-size: 0.8rem;
+    }
 
-// .intro {
-//   background: black;
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-// .slider {
-//   background: rgb(97, 105, 109);
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   transform: translateY(100%);
-// }
+    .btn-warning a {
+      font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 290px) {
 
-// .intro-text {
-//   color: rgb(233, 233, 233);
-//   font-family: "Heebo", sans-serif;
-//   font-size: 3rem;
-// }
+    .big-text {
+      width: 100vw;
+      font-size: 1.8rem;
+    }
+    .btn-danger {
+      width: 70px;
+    }
 
-// .hide {
-//   background: black;
-//   overflow: hidden;
-// }
+    ;.btn-warning {
+      width: 70px;
+    }
 
-// .hide span {
-//   transform: translateY(100%);
-//   display: inline-block;
-// }
+    .btn-danger a {
+      font-size: 0.5rem;
+    }
+
+    .btn-warning a {
+      font-size: 0.5rem;
+    }
+}
