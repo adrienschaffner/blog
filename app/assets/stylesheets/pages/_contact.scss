@@ -13,6 +13,9 @@
   & h1 {
     padding: 10vh;
   }
+  & h3 {
+    padding: 5vh;
+  }
   & a:hover {
     opacity: 1;
   }
@@ -32,5 +35,36 @@
   font-size: 2rem;
   padding: 10px;
   opacity: 0.7;
+  }
+}
+
+
+@media screen and (max-width: 415px) {
+
+  .contact-info h1 {
+   font-size: 1.3rem;
+   padding: 8vh;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 390px) {
+
+  .contact-info h1 {
+   font-size: 1.2rem;
+   padding: 7vh;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 360px) {
+
+
+  .contact-info h3 {
+    font-size: 1rem;
   }
 }
