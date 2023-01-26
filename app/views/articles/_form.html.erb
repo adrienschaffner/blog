@@ -1,9 +1,10 @@
 <%= simple_form_for(article) do |f| %>
   <%= f.input :title %>
   <%= f.input :author %>
-    <%= f.input :body, input_html: {id: "body", type: "hidden"} %>
   <div class="background-blue">
-    <trix-editor input="body"></trix-editor>
+    <%= f.rich_text_area :body %>
+    <%# <%= f.input :body, input_html: {id: "body", type: "hidden"} %>
+    <%# <trix-editor input="body"></trix-editor> %>
   </div>
   <%= f.input :rating, type: "hidden" %>
   <%# Pour dire qu'on veut uploader le fichier  %>

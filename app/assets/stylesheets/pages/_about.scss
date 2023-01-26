@@ -7,45 +7,6 @@
   align-items: center;
 }
 
-.yellow-title {
-  color: #EDB703;
-  letter-spacing: 0.8rem;
-  border-bottom: 1px solid white;
-  max-width: 50vw;
-  padding: 2vh;
-}
-
-.purple-title {
-  color: #623491;
-  letter-spacing: 0.8rem;
-  border-bottom: 1px solid white;
-  max-width: 50vw;
-  padding: 2vh;
-}
-
-.red-title {
-  color: #DD1C26;
-  letter-spacing: 0.8rem;
-  border-bottom: 1px solid white;
-  max-width: 50vw;
-  padding: 2vh;
-}
-
-.green-title {
-  color: #167247;
-  letter-spacing: 0.8rem;
-  border-bottom: 1px solid white;
-  max-width: 50vw;
-  padding: 2vh;
-}
-
-.blue-title {
-  color: #437CBC;
-  letter-spacing: 0.8rem;
-  border-bottom: 1px solid white;
-  max-width: 50vw;
-  padding: 2vh;
-}
 
 .intro-container {
   background-color: black;
@@ -93,7 +54,6 @@
 }
 
 .experience-container {
-  background-color: black;
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
@@ -120,15 +80,20 @@
   padding: 5vh;
 }
 
+.experience-container .btn-success {
+  background-color: #167247;
+}
+
 .container-scroll {
   display: flex;
   flex-direction: column;
   width: 40vw;
   height: 75vh;
   padding: 5vh;
-  border-left: 2px solid white;
+  border-left: 2px solid #EDB703;
   overflow-x:hidden;
   overflow-y:auto;
+  // background-color: rgb(0, 0, 18);
 }
 
 
@@ -150,7 +115,7 @@
   align-items: flex-start;
 }
 
-.list-none ul {
+.list-none {
   list-style: none;
 }
 
@@ -254,13 +219,13 @@
 
 .fa-arrow-down-long:hover{
   color: black;
-  background-color: white;
+  background-color: #EDB703;
   transition-duration: 0.3s;
 }
 
 .fa-arrow-up-long:hover{
   color: black;
-  background-color: white;
+  background-color: #EDB703;
   transition-duration: 0.3s;
 }
 
@@ -283,7 +248,9 @@
   transition-delay: 0.9s;
 }
 
-
+.text-center {
+  text-align: center;
+}
 
 
 
@@ -354,9 +321,11 @@
     padding-left: 0px;
   }
 
-  .container-scroll {
-    width: 85vw;
-  }
+  // .container-scroll {
+  //   width: 85vw;
+  //   border: 2px solid red;
+  //   color: blue;
+  // }
 
   .container-skills {
     display: flex;

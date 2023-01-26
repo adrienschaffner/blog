@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@popperjs/core": "^2.11.6",
-    "bootstrap": "^5.2.3"
+    "@rails/actiontext": "^7.0.4-2",
+    "bootstrap": "^5.2.3",
+    "trix": "^2.0.4"
   }
 }

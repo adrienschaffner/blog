@@ -1,7 +1,7 @@
 
 <h1 class="index-title">Articles</h1>
 <div class="index-slogan" data-controller="loader">
-  <p>To share some of what I know about Product Management.</p>
+  <p>To share some of what I learned about Product Management.</p>
 </div>
 
 <%# <p>total : <%= Article.public_count %>
@@ -17,11 +17,11 @@
             <%= article.id %>
             <%=link_to article.title.capitalize, article %>
           </div>
-          <%= link_to article do %>
-            <div class="article-body">
-              <%= truncate(article.body, length: 200) %>
-            </div>
-          <% end %>
+          <%# <%= link_to article do %>
+            <%# <div class="article-body"> %>
+              <%# <%= truncate(article.body, length: 200) %>
+            <%# </div> %>
+          <%# <% end %>
           <div class="read-article">
             <%= link_to "read more", article %>
           </div>
