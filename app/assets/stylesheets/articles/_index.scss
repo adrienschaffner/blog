@@ -5,7 +5,7 @@
   color: #EDB703;
   width: 100vw;
   padding-bottom: 5vh;
-  font-size: 3rem;
+  font-size: 4rem;
   width: 100vw;
   text-align: center;
   letter-spacing: 0.8rem;
@@ -15,12 +15,14 @@
   width: 100vw;
   text-align: center;
   font-size: 1.5rem;
-  padding-left: 15vw;
+  // padding-left: 0vw;
+  letter-spacing: 0.7rem;
 }
 
 
 .articles-container {
   // border: 2px solid red;
+  max-height: 55vh;
   padding: 10vh;
   // padding-left: 5vh;
   // padding-right: 5vh;
@@ -42,7 +44,7 @@
   // box-shadow: 1px 1px 3px #B6B4BB;
   // margin-top: 5vh;
   // border-radius: 4px;
-  opacity: 0.8;
+  opacity: 0.6;
   // min-height: 30vh;
   // cursor: pointer;
 }
@@ -87,7 +89,41 @@
   font-style: italic;
 }
 
-.translate-x-30 {
-  transform: translateX(-15vh);
-  transition: 0.7s ease-out;
+.new-article {
+  font-size: 1.8rem;
+  opacity: 0.8;
 }
+
+.new-article:hover {
+  color: #EDB703;
+  opacity: 1;
+}
+
+.log-out {
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+
+.log-out:hover {
+  color: #167247;
+  opacity: 1;
+}
+
+.fa-mug-saucer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &:hover {
+    color: rgb(38, 38, 38);
+  }
+}
+
+// .translate-x-30 {
+//   transform: translateX(-15vh);
+//   transition: 0.7s ease-out;
+// }
+
+// .transform-x-40 {
+//   transform: translateX(-40vh);
+//   transition: 0.7s ease-out;
+// }

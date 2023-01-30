@@ -172,18 +172,18 @@
 
 .container-article {
   border: 0.5px solid black;
-  padding: 10vh;
+  padding: 5vh;
   // background-color: black;
   background-color: whitesmoke;
   color: black;
   font-size: 1.2rem;
-  height: 75vh;
+  // height: 75vh;
   // max-width: 80vw;
   width: 80vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  justify-content: space-between;
+  // align-items: flex-start;
   // border-radius: 8px;
   // min-height: 80vh;
 }
@@ -227,7 +227,7 @@
   // background-color: black;
   // margin: auto;
   // max-width: 75vw;
-  height: 75vh;
+  // height: 75vh;
   // max-width: 80vw;
   width: 80vw;
   display: flex;

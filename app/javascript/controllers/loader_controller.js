@@ -21,15 +21,16 @@ export default class extends Controller {
     const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
     tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
+    tl.fromTo(".index-slogan", { opacity: 0 }, { opacity: 1, duration: 1 });
     tl.to(".slider", { y: "-100%", duration: 1.4, delay: 0.5 });
     tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
     tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
     tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 
-    setTimeout(function() {
-      //your code to be executed after 1 second
-      window.addEventListener ("load", slogan.classList.add('translate-x-30'))
-    }, delayInMilliseconds1100);
+    // setTimeout(function() {
+    //   //your code to be executed after 1 second
+    //   window.addEventListener ("load", slogan.classList.add('transform-x-40'))
+    // }, delayInMilliseconds1100);
   }
 }
 

@@ -42,8 +42,8 @@
 
 
 <% if admin_signed_in? %>
-  <%= link_to "New Article", new_article_path %>
-  <%= link_to "log out", destroy_admin_session_path, method: :delete %>
+  <%= link_to "New Article", new_article_path, class: "yellow new-article" %>
+  <%= link_to "log out", destroy_admin_session_path, method: :delete, class: "green log-out" %>
 <% else %>
   <%# <%= link_to"", new_admin_registration_path, class:"fa-solid fa-mug-saucer" %>
   <%= link_to"",  new_admin_session_path, class:"fa-solid fa-mug-saucer"%>
