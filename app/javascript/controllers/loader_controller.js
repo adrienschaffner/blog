@@ -7,9 +7,9 @@ export default class extends Controller {
     console.log("hello from loader controller ! ");
     const loader = document.querySelector('.loader');
     const slider = document.querySelector('.slider');
-    // const slogan = document.querySelector('.index-slogan');
+    const slogan = document.querySelector('.index-slogan');
     const title = document.querySelector('.big-text');
-    const slogan = document.querySelector('.font-slogan');
+    // const slogan = document.querySelector('.font-slogan');
     const btn = document.querySelector('.btn-list');
     // const btn_login = document.querySelector('.btn-login');
     // Event.preventDefaulft()
@@ -25,6 +25,11 @@ export default class extends Controller {
     tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
     tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
     tl.fromTo(".big-text", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
+
+    setTimeout(function() {
+      //your code to be executed after 1 second
+      window.addEventListener ("load", slogan.classList.add('translate-x-30'))
+    }, delayInMilliseconds1100);
   }
 }
 
@@ -43,10 +48,6 @@ export default class extends Controller {
 //   window.addEventListener ("load", title.classList.add('transform-x-20'))
 // }, delayInMilliseconds1100);
 
-// setTimeout(function() {
-//   //your code to be executed after 1 second
-//   window.addEventListener ("load", slogan.classList.add('translate-x-30'))
-// }, delayInMilliseconds1100);
 
 // setTimeout(function() {
 //   //your code to be executed after 1 second
