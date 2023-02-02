@@ -118,3 +118,54 @@
     justify-content: center;
   }
 }
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+  .navbar .footer-links {
+    gap: 1rem;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+  .fa-cat {
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .logo-title {
+    font-size: 1.2rem;
+  }
+
+  .navbar .footer-links {
+    gap: 0rem;
+  }
+
+  .navbar .footer-links a {
+    font-size: 1.3rem;
+  }
+
+  .navbar .fa-bars {
+    font-size: 25px;
+  }
+
+}
+
+
+@media screen and (max-width:385px) {
+  // .fa-cat {
+  //   font-size: 1rem;
+  // }
+}
