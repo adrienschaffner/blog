@@ -99,18 +99,12 @@
 
 
 .experience-container {
-
-  // padding: 3vh;
   display: flex;
   height: 80vh;
-  // justify-content: space-evenly;
-  // align-items: stretch;
-  // align-items: center;
-  // max-height: 80vh;
-  // min-height: 70vh;
-  // width: 80vw;
-  // margin: 15vw;
-  // color: black;
+}
+
+.experience-container li {
+  list-style: none;
 }
 
 .experience-container .about {
@@ -144,18 +138,18 @@
 }
 
 .experience-container .btn-success {
-  background-color: whitesmoke;
-  & a {
-    color: black;
-  }
+  background-color: #167247;
+  border: 1px solid black;
+  opacity: 0.9;
+  list-style: none;
+  color: white;
 }
 
 .experience-container .btn-success:hover {
   background-color: #167247;
   transition: background-color 0.4s ease;
-  & a {
-    color: white;
-  }
+  opacity: 1;
+  border: 1px solid white;
 }
 
 
@@ -215,20 +209,23 @@
   padding-left: 0px;
 }
 
+.container-article li {
+  list-style: none;
+}
+
 
 .container-article .btn-warning {
-  background-color: whitesmoke;
-  & a {
-    color: black;
-  }
+  background-color: #EDB703;
+  border: 1px solid white;
+  opacity: 0.9;
+  color: white;
 }
 
 .container-article .btn-warning:hover {
   background-color: #EDB703;
+  border: 1px solid white;
   transition: background-color 0.4s ease;
-  & a {
-    color: white;
-  }
+  opacity: 1;
 }
 
 
@@ -247,19 +244,22 @@
   padding-left: 0px;
 }
 
+.container-hobbies li {
+  list-style: none;
+}
+
 .container-hobbies .btn-success {
-  background-color: whitesmoke;
-  & a {
-    color: black;
-  }
+  background-color: #167247;
+  border: 1px solid black;
+  opacity: 0.9;
+  color: white;
 }
 
 .container-hobbies .btn-success:hover {
   background-color: #167247;
+  border: 1px solid white;
   transition: background-color 0.4s ease;
-  & a {
-    color: white;
-  }
+  opacity: 1;
 }
 
 
@@ -454,7 +454,7 @@
     font-size: 1.4rem;
   }
 
-  .btn a {
+  .btn {
     font-size: 1rem;
     font-weight: bold;
   }
@@ -638,8 +638,12 @@
     font-size: 0.8rem;
   }
 
-  .btn a {
+  .btn {
     font-size: 0.8rem;
+  }
+
+  .container-article .border-white {
+    display: none;
   }
 }
 
@@ -787,6 +791,9 @@
 
   .journey-container .yellow-title {
     font-size: 0.8rem;
+    text-align: left;
+    // margin: 0;
+
   }
 
   .experience-container .yellow-title {
@@ -803,6 +810,10 @@
     align-items: center;
   }
 
+  .experience-container p {
+    font-size: 0.8rem;
+  }
+
   .container-skills ul {
     font-size: 0.7rem;
   }
@@ -814,7 +825,8 @@
   }
 
   .container-article .btn {
-    margin-left: 20vw;
+    // margin-left: 20vw;
+    margin: 0 auto;
   }
 
   .blue-title {
@@ -830,8 +842,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .btn a {
     font-size: 0.6rem;
   }
 }
@@ -851,9 +861,6 @@
 
   .btn {
     height: 20px;
-  }
-
-  .btn a {
     font-size: 0.5rem;
   }
 
@@ -898,295 +905,3 @@
   }
 
 }
-
-
-
-
-  // .yellow-title {
-  //   letter-spacing: 0.5rem;
-  //   // border-bottom: 0.5px solid white;
-  //   // max-width: 50vw;
-  //   // padding: 3vh;
-  //   font-size: 1.4rem;
-  // }
-
-
-
-//   .intro-container .display-3 {
-//     font-size: 2rem;
-//     margin: 3vh;
-//     text-align: center;
-//   }
-
-//   .intro-container .paragraph {
-//     max-width: 90vw;
-//     padding: 5vw;
-//     // font-size: 1.2rem;
-//     text-align: center;
-//   }
-
-
-
-//   .border-black {
-//     display: none;
-//   }
-
-//   .arrow-container .arrow-direction {
-//     display: none;
-//   }
-
-
-//   .journey-container {
-//     overflow: scroll;
-//     // width: 100vw;
-//   }
-
-//   .experience-container {
-//     // width: 85vw;
-//   }
-
-
-//   .container-skills {
-//     // display: flex;
-//     // flex-direction: column;
-//     display: inline;
-//     /* color: black; */
-//     overflow-x: hidden;
-//     overflow-y: scroll;
-//     // height: 70vh;
-//     padding: 3vh;
-//     font-size: 1.2rem;
-//     // width: 80vw;
-
-//   }
-
-//   // .container-skills .m-t-20 {
-//   //   margin-top: 8vh;
-//   //   margin-bottom: 5vh;
-//   // }
-
-//   .text-center {
-//     text-align: center;
-//   }
-
-//   .text-center ul {
-//     list-style: none;
-//   }
-
-//   .container-skills .skills-row {
-//     flex-direction: column;
-//     // margin-top: 3vh;
-//   }
-
-//   .container-skills .skills-row .skills-column {
-//     // width: 80vw;
-//   }
-
-
-
-
-
-
-
-//   .container-article {
-//     font-size: 1.2rem;
-//     // width: 85vw;
-//     // height: 60vh;
-//     display: inline;
-//     overflow: scroll;
-//   }
-
-//   .container-hobbies {
-//     font-size: 1.2rem;
-//     // width: 85vw;
-//     // height: 60vh;
-//     display: inline;
-//     overflow: scroll;
-//   }
-
-//   .container-skills {
-//     // width: 85vw;
-//   }
-// }
-
-
-
-
-
-
-
-// @media screen and (max-width:750px){
-
-//   .intro-container .display-3 {
-//     font-size: 1.3rem;
-//     // margin: 2vh;
-//   }
-
-//   .yellow-title {
-//     font-size: 1.2rem;
-//     padding: 2vh;
-//   }
-
-//   .intro-container .paragraph {
-//     font-size: 1rem;
-//   }
-
-//   .journey-container .display-none {
-//     display: none;
-//   }
-
-//   .journey-container .yellow-title {
-//     font-size: 1.3rem;
-//     padding: 3vh;
-//   }
-// }
-
-
-// @media screen and (max-width:700px){
-
-
-
-//   .journey-container {
-//     // max-height: 80vh;
-//     overflow: scroll;
-//   }
-
-//   .container-skills .skills-column li {
-//     // width: 50vw;
-//   }
-
-//   .container-article {
-//     // width: 85vw;
-//   }
-// }
-
-// @media screen and (max-width:630px){
-
-//   .intro-container .display-3 {
-//     display: none;
-//   }
-
-//   .intro-container .name {
-//     display: inline;
-//     color: #EDB703;
-//   }
-
-//   .intro-container .paragraph {
-//     font-size: 1rem;
-//   }
-
-//   .container-skills ul {
-//     font-size: 1rem;
-//   }
-// }
-
-
-// @media screen and (max-width:540px){
-
-//   .intro-container .display-3 {
-//     font-size: 1rem;
-//     margin: 1vh;
-//   }
-//   // .intro-container p {
-//   //   font-size: 1.2rem;
-//   // }
-//   .avatar {
-//     width: 180px;
-//     height: 180px;
-//     border-radius: 90px;
-//   }
-
-//   .intro-container .display-none {
-//     display: none;
-//   }
-
-//   .intro-container .paragraph {
-//     font-size: 1rem;
-//   }
-
-//   .experience-container {
-//     // max-height: 50vh;
-//   }
-
-//   .experience-container .yellow-title {
-//     max-width: 65vw;
-//   }
-
-//   .container-hobbies p {
-//     width: 60vw;
-//     font-size: 0.8rem;
-//   }
-// }
-
-// @media screen and (max-width:460px){
-//   // .intro-container p {
-//   //   font-size: 0.4rem;
-//   // }
-//   .intro-container .paragraph {
-//     font-size: 0.9rem;
-//   }
-
-//   // .m-t-20 {
-//   //   margin-top: 12vh;
-//   //   // margin-right: 5vw;
-//   //   // margin-left: 5vw;
-//   //   margin-bottom: 5vh;
-//   // }
-
-//   .journey-container {
-//     // max-height: 50vh;
-//     // min-height: 40vh;
-//     // width: 80vw;
-//   }
-
-//   .journey-container .yellow-title {
-//     // width: 90vw;
-//     letter-spacing: 0.6rem;
-//     max-width: 70vw;
-//   }
-
-//   .journey-container p {
-//     font-size: 0.9rem;
-//   }
-
-//   .container-skills .skills-row .skills-column {
-//     width: 40vw;
-//   }
-
-//   .container-article {
-//     // margin: 5vh;
-//   }
-
-// }
-
-// @media screen and (max-width:400px){
-//   .intro-container {
-//     // max-height: 50vh;
-//     // gap: 1rem;
-//     // justify-content: space-evenly;
-//   }
-
-//   .journey-container {
-//     // max-height: 50vh;
-//     // min-height: 20vh;
-//   }
-//   .journey-container .yellow-title {
-//     font-size: 1rem;
-//   }
-
-
-//   .container-skills {
-//     // max-height: 50vh;
-//     // min-height: 30vh;
-//   }
-
-//   .container-article {
-//     // max-height: 50vh;
-//     // min-height: 30vh;
-//   }
-
-//   .container-hobbies {
-//     // max-height: 50vh;
-//     // min-height: 30vh;
-//   }
-// }

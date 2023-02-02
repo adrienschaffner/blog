@@ -1,44 +1,46 @@
-<div class="main-content">
-  <div class="page-content">
+<%# <div class="main-content"> %>
+<div class="page-content">
 
-    <h2 class="index-title"><%= @article.title %></h2>
-    <div class="picture-show">
-      <% if @article.picture.attached?  %>
-        <%= cl_image_tag @article.picture.key, alt: "article picture", height:337, crop: :fill, class: "picture" %>
-      <% end %>
-    </div>
+  <h2 class="index-title"><%= @article.title %></h2>
+  <%# <div class="picture-show"> %>
+    <% if @article.picture.attached?  %>
+      <%= cl_image_tag @article.picture.key, alt: "article picture", height:337, crop: :fill, class: "picture" %>
+    <% end %>
+  <%# </div> %>
 
-    <%# <p><%= @article.rating %>
-    <div class="body-show">
-      <p><%= @article.body %></p>
-    </div>
-    <div class="btn-list">
-      <%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %>
-      <%# <%= link_to "more about me", about_path, class: "btn btn-lg btn-warning" %>
-    </div>
+  <%# <p><%= @article.rating %>
+  <div class="body-show">
+    <p><%= @article.body %></p>
   </div>
+  <%# <div class="btn-list"> %>
+    <%= link_to "Back", articles_path, class: "btn btn-lg btn-success" %>
+    <%# <%= link_to "more about me", about_path, class: "btn btn-lg btn-warning" %>
+  <%# </div> %>
+</div>
 
 <%#
     <%= link_to "more about me", about_path, class: "btn btn-lg btn-primary" %>
 
     <%# <div class="btn-show"> %>
-    <% if admin_signed_in? %>
+<div class="sign-in-option">
+  <% if admin_signed_in? %>
 
-    <ul>
-      <%= link_to "modify picture", edit_article_path(@article) %>
-      <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %>
-      <li><%= link_to "Destroy", article_path(@article), class: "btn btn-lg btn-danger", data: {
-                          turbo_method: :delete,
-                        turbo_confirm: "Are you sure?"
-          } %>
-      </li>
-    </ul>
-      <% else %>
-        <%= link_to "sign in",  admin_session_path %>
-      <% end %>
-    </div>
-
+  <ul>
+    <%= link_to "modify picture", edit_article_path(@article) %>
+    <li><%= link_to "Edit", edit_article_path(@article), class: "btn btn-lg btn-primary" %>
+    <li><%= link_to "Destroy", article_path(@article), class: "btn btn-lg btn-danger", data: {
+                        turbo_method: :delete,
+                      turbo_confirm: "Are you sure?"
+        } %>
+    </li>
+  </ul>
+    <% else %>
+      <%# <%= link_to "sign in",  admin_session_path %>
+      <%= link_to"",  new_admin_session_path, class:"fa-solid fa-mug-saucer"%>
+    <% end %>
 </div>
+
+<%# </div> %>
 
 
   <%# <% @article.rating.to_i.times do  %>
