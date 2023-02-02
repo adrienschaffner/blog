@@ -26,6 +26,7 @@
 .btn-warning:hover {
   border: 1px solid white;
   background-color: #EDB703;
+  transition: 0.7s ease;
   & a {
     color: white;
   }
@@ -52,6 +53,7 @@
 .btn-success:hover {
   border: 1px solid white;
   background-color: #167247;
+  transition: 0.7s ease;
   & a {
     color: white;
   }
