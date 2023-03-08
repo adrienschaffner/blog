@@ -59,6 +59,7 @@ gem "sassc-rails"
 gem "font-awesome-sass"
 
 gem "cloudinary"
+gem "pg"
 
 gem "autoprefixer-rails"
 
