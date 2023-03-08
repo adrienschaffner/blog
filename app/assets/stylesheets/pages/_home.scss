@@ -36,22 +36,6 @@ main {
 }
 
 
-.transform-x-20 {
-  transform: translateX(8vw);
-  transition: 0.7s ease-out;
-}
-
-.transform-x-20-reverse {
-  transform: translateX(-8vw);
-  transition: 0.7s ease-out;
-}
-
-.transform-y-50 {
-  transform: translateY(-50%);
-  transition: 0.7s ease-out;
-  // height: 0%;
-}
-
 
 .landing {
   min-height: 100vh;
@@ -254,3 +238,22 @@ main {
       font-size: 0.5rem;
     }
 }
+
+
+
+// .transform-x-20 {
+  //   transform: translateX(8vw);
+  //   transition: 0.7s ease-out;
+  // }
+
+  // .transform-x-20-reverse {
+  //   transform: translateX(-8vw);
+  //   transition: 0.7s ease-out;
+  // }
+
+  // .transform-y-50 {
+  //   transform: translateY(-50%);
+  //   transition: 0.7s ease-out;
+  //   // height: 0%;
+  // }
+  //

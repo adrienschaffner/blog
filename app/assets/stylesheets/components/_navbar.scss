@@ -128,21 +128,6 @@
 
 @media screen and (max-width:900px){
 
-  .navbar {
-    // padding: 0;
-    // justify-content: space-between;
-    // height: 100vh;
-    // align-items: flex-start;
-    // margin-top: 20px;
-  }
-
-  // .navbar-dropdown {
-  //   padding: 0;
-  //   justify-content: space-between;
-  //   height: 100vh;
-  //   align-items: flex-start;
-  //   margin-top: 20px;
-  // }
 
   .navbar .logo {
     padding-left: 2%;
@@ -237,5 +222,11 @@
   .navbar .fa-bars {
     font-size: 25px;
   }
+}
 
+@media screen and (max-width:280px) {
+  .social-links a {
+    text-decoration: none;
+    font-size: 24px;
+  }
 }

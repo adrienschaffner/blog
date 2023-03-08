@@ -22,7 +22,7 @@ export default class extends Controller {
 
     tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
     // tl.fromTo(".index-title", { opacity: 0 }, { opacity: 1, duration: 0.8 });
-    tl.fromTo(".index-slogan", { opacity: 0 }, { opacity: 1, duration: 1 });
+    tl.fromTo(".index-slogan", { opacity: 0 }, { opacity: 1, duration: 0.5 });
     tl.to(".slider", { y: "-100%", duration: 1.4, delay: 0.5 });
     tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
     tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
