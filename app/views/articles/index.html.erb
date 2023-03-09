@@ -44,13 +44,13 @@
   </div> %>
 
 
-  <% if admin_signed_in? %>
-    <%= link_to "New Article", new_article_path, class: "yellow new-article" %>
-    <%= link_to "log out", destroy_admin_session_path, method: :delete, class: "green log-out" %>
-  <% else %>
+  <%# <% if admin_signed_in? %>
+    <%# <%= link_to "New Article", new_article_path, class: "yellow new-article" %>
+    <%# <%= link_to "log out", destroy_admin_session_path, method: :delete, class: "green log-out" %>
+  <%# <% else %>
     <%# <%= link_to"", new_admin_registration_path, class:"fa-solid fa-mug-saucer" %>
-    <%= link_to"",  new_admin_session_path, class:"fa-solid fa-mug-saucer"%>
-  <% end %>
+    <%# <%= link_to"",  new_admin_session_path, class:"fa-solid fa-mug-saucer"%>
+  <%# <% end %>
 </div>
 
 <%# <%= link_to "top articles", top_articles_path %>
